@@ -1,5 +1,4 @@
-{ 
-	"dishes" : [
+[
 		{
 			"name": "Picanha Argentina",
 			"description": "200g de picanha bovina assadas na brasa",
@@ -66,5 +65,4 @@
 			"price": 15.00,
 			"ïmage": "cavala"
 		}
-	]
-}
+]

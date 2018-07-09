@@ -8,7 +8,8 @@
 
 import Foundation
 
-class Ingredient: Codable {
+class Ingredient: Codable, ActiveRecord {
+    typealias Item = Ingredient
     var name: String
     
     init(withName name: String) {
