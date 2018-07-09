@@ -15,13 +15,18 @@ class MeatViewController: BaseViewController {
         table.dataSource = self
         table.delegate = self
         table.translatesAutoresizingMaskIntoConstraints = false
+        table.separatorStyle = .none
         self.view.addSubview(table)
         return table
     }()
     
+    private let cellIdentifier = "MEAT_CELL"
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
+        
+        let meatNib = UINib(nibName: "MeatTableViewCell", bundle: Bundle.main)
+        self.tableView.register(meatNib, forCellReuseIdentifier: cellIdentifier)
         
         
     }
@@ -46,8 +51,12 @@ extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        cell.textLabel?.text = "\(indexPath.row)"
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? MeatTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        
         return cell
     }
     

@@ -8,7 +8,11 @@
 
 import Foundation
 
-protocol Ingredient {
-    var name: String { get set }
-    var image: String { get set }
+class Ingredient: Codable {
+    
+    var name: String
+    
+    init(withName name: String) {
+        self.name = name
+    }
 }

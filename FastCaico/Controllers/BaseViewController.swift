@@ -18,7 +18,8 @@ class BaseViewController: UIViewController {
     private func loadNavigationItem() {
         self.title = "Lauch Box"
         
-        let rightBarButtonItem = UIBarButtonItem(image: nil, style: .plain, target: self, action: #selector(loadShoppingCart))
+        let image = UIImage(named: "car")
+        let rightBarButtonItem = UIBarButtonItem(image: image!, style: .plain, target: self, action: #selector(loadShoppingCart))
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
     }
     
