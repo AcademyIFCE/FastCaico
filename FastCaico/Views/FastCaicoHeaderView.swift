@@ -14,7 +14,9 @@ class FastCaicoHeaderView: UITableViewHeaderFooterView {
     
     var mustShowShadow: Bool = false {
         didSet {
-            self.toggleShadow(mustShowShadow)
+            if mustShowShadow != oldValue {            
+                self.toggleShadow(mustShowShadow)
+            }
         }
     }
     

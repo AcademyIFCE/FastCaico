@@ -22,6 +22,8 @@ class MeatViewController: BaseViewController {
     
     private let cellIdentifier = "MEAT_CELL"
     private let headerIdentifier = "MEAT_HEADER"
+    private let dishes = Chargeable.all()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
@@ -52,7 +54,7 @@ class MeatViewController: BaseViewController {
 extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return dishes?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -60,6 +62,9 @@ extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? MeatTableViewCell else {
             return UITableViewCell()
         }
+        
+//        let dish = dishes?[indexPath.row]
+//        cell.setup(with: dish)
         return cell
     }
     
@@ -72,16 +77,21 @@ extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
         return headerView
     }
     
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        if let header = self.tableView.headerView(forSection: 0) as? FastCaicoHeaderView {
-            header.mustShowShadow = true
-        }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        self.applyShadowToHeader(tableView)
     }
     
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        if let header = self.tableView.headerView(forSection: 0) as? FastCaicoHeaderView {
-            header.mustShowShadow = false
-        }
+    private func verifyShadowNeed() -> Bool {
+        let cellHeight = self.tableView.visibleCells.first?.frame.height
+        let contentOffSet = self.tableView.contentOffset
+        
+        return contentOffSet.y > cellHeight!/CGFloat(6)
     }
     
+    private func applyShadowToHeader(_ tableView: UITableView) {
+        if let header = self.tableView.headerView(forSection: 0) as? FastCaicoHeaderView {
+            header.mustShowShadow = verifyShadowNeed()
+        }
+    }
+
 }
