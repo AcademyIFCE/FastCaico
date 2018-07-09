@@ -1,612 +1,628 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 50;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 50;
+    objects = {
 
 /* Begin PBXBuildFile section */
-		53B5361720F3D2940073AAD0 /* MeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5361520F3D2940073AAD0 /* MeatViewController.swift */; };
-		53B5361A20F3D3240073AAD0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5361920F3D3240073AAD0 /* BaseViewController.swift */; };
-		DA78DE4B20EE8FE6005CC2A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE4A20EE8FE6005CC2A0 /* AppDelegate.swift */; };
-		DA78DE4D20EE8FE6005CC2A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE4C20EE8FE6005CC2A0 /* ViewController.swift */; };
-		DA78DE5320EE8FE6005CC2A0 /* FastCaico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE5120EE8FE6005CC2A0 /* FastCaico.xcdatamodeld */; };
-		DA78DE5520EE8FE8005CC2A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE5420EE8FE8005CC2A0 /* Assets.xcassets */; };
-		DA78DE5820EE8FE8005CC2A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE5620EE8FE8005CC2A0 /* LaunchScreen.storyboard */; };
-		DA78DE6320EE8FE8005CC2A0 /* FastCaicoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE6220EE8FE8005CC2A0 /* FastCaicoTests.swift */; };
-		DA78DE6E20EE8FE8005CC2A0 /* FastCaicoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE6D20EE8FE8005CC2A0 /* FastCaicoUITests.swift */; };
+        53B5361720F3D2940073AAD0 /* MeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5361520F3D2940073AAD0 /* MeatViewController.swift */; };
+        53B5361A20F3D3240073AAD0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5361920F3D3240073AAD0 /* BaseViewController.swift */; };
+        DA78DE4B20EE8FE6005CC2A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE4A20EE8FE6005CC2A0 /* AppDelegate.swift */; };
+        DA78DE4D20EE8FE6005CC2A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE4C20EE8FE6005CC2A0 /* ViewController.swift */; };
+        DA78DE5320EE8FE6005CC2A0 /* FastCaico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE5120EE8FE6005CC2A0 /* FastCaico.xcdatamodeld */; };
+        DA78DE5520EE8FE8005CC2A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE5420EE8FE8005CC2A0 /* Assets.xcassets */; };
+        DA78DE5820EE8FE8005CC2A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE5620EE8FE8005CC2A0 /* LaunchScreen.storyboard */; };
+        DA78DE6320EE8FE8005CC2A0 /* FastCaicoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE6220EE8FE8005CC2A0 /* FastCaicoTests.swift */; };
+        DA78DE6E20EE8FE8005CC2A0 /* FastCaicoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE6D20EE8FE8005CC2A0 /* FastCaicoUITests.swift */; };
+        DA78DE7D20EE98B1005CC2A0 /* Chargeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7C20EE98B1005CC2A0 /* Chargeable.swift */; };
+        DA78DE7F20EE98BC005CC2A0 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7E20EE98BC005CC2A0 /* Ingredient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DA78DE5F20EE8FE8005CC2A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA78DE3F20EE8FE6005CC2A0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA78DE4620EE8FE6005CC2A0;
-			remoteInfo = FastCaico;
-		};
-		DA78DE6A20EE8FE8005CC2A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA78DE3F20EE8FE6005CC2A0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA78DE4620EE8FE6005CC2A0;
-			remoteInfo = FastCaico;
-		};
+        DA78DE5F20EE8FE8005CC2A0 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = DA78DE3F20EE8FE6005CC2A0 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = DA78DE4620EE8FE6005CC2A0;
+            remoteInfo = FastCaico;
+        };
+        DA78DE6A20EE8FE8005CC2A0 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = DA78DE3F20EE8FE6005CC2A0 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = DA78DE4620EE8FE6005CC2A0;
+            remoteInfo = FastCaico;
+        };
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		53B5361520F3D2940073AAD0 /* MeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatViewController.swift; sourceTree = "<group>"; };
-		53B5361920F3D3240073AAD0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		DA78DE4720EE8FE6005CC2A0 /* FastCaico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastCaico.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA78DE4A20EE8FE6005CC2A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA78DE4C20EE8FE6005CC2A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DA78DE5220EE8FE6005CC2A0 /* FastCaico.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FastCaico.xcdatamodel; sourceTree = "<group>"; };
-		DA78DE5420EE8FE8005CC2A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DA78DE5720EE8FE8005CC2A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DA78DE5920EE8FE8005CC2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA78DE5E20EE8FE8005CC2A0 /* FastCaicoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastCaicoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA78DE6220EE8FE8005CC2A0 /* FastCaicoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCaicoTests.swift; sourceTree = "<group>"; };
-		DA78DE6420EE8FE8005CC2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA78DE6920EE8FE8005CC2A0 /* FastCaicoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastCaicoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA78DE6D20EE8FE8005CC2A0 /* FastCaicoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCaicoUITests.swift; sourceTree = "<group>"; };
-		DA78DE6F20EE8FE8005CC2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        53B5361520F3D2940073AAD0 /* MeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatViewController.swift; sourceTree = "<group>"; };
+        53B5361920F3D3240073AAD0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+        DA78DE4720EE8FE6005CC2A0 /* FastCaico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastCaico.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        DA78DE4A20EE8FE6005CC2A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        DA78DE4C20EE8FE6005CC2A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+        DA78DE5220EE8FE6005CC2A0 /* FastCaico.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FastCaico.xcdatamodel; sourceTree = "<group>"; };
+        DA78DE5420EE8FE8005CC2A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        DA78DE5720EE8FE8005CC2A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+        DA78DE5920EE8FE8005CC2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        DA78DE5E20EE8FE8005CC2A0 /* FastCaicoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastCaicoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+        DA78DE6220EE8FE8005CC2A0 /* FastCaicoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCaicoTests.swift; sourceTree = "<group>"; };
+        DA78DE6420EE8FE8005CC2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        DA78DE6920EE8FE8005CC2A0 /* FastCaicoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastCaicoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+        DA78DE6D20EE8FE8005CC2A0 /* FastCaicoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCaicoUITests.swift; sourceTree = "<group>"; };
+        DA78DE6F20EE8FE8005CC2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        DA78DE7C20EE98B1005CC2A0 /* Chargeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chargeable.swift; sourceTree = "<group>"; };
+        DA78DE7E20EE98BC005CC2A0 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DA78DE4420EE8FE6005CC2A0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA78DE5B20EE8FE8005CC2A0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA78DE6620EE8FE8005CC2A0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        DA78DE4420EE8FE6005CC2A0 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        DA78DE5B20EE8FE8005CC2A0 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        DA78DE6620EE8FE8005CC2A0 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		53B5361420F3D22C0073AAD0 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				53B5361520F3D2940073AAD0 /* MeatViewController.swift */,
-				53B5361920F3D3240073AAD0 /* BaseViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		DA78DE3E20EE8FE6005CC2A0 = {
-			isa = PBXGroup;
-			children = (
-				DA78DE4920EE8FE6005CC2A0 /* FastCaico */,
-				DA78DE6120EE8FE8005CC2A0 /* FastCaicoTests */,
-				DA78DE6C20EE8FE8005CC2A0 /* FastCaicoUITests */,
-				DA78DE4820EE8FE6005CC2A0 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		DA78DE4820EE8FE6005CC2A0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DA78DE4720EE8FE6005CC2A0 /* FastCaico.app */,
-				DA78DE5E20EE8FE8005CC2A0 /* FastCaicoTests.xctest */,
-				DA78DE6920EE8FE8005CC2A0 /* FastCaicoUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DA78DE4920EE8FE6005CC2A0 /* FastCaico */ = {
-			isa = PBXGroup;
-			children = (
+        53B5361420F3D22C0073AAD0 /* Controllers */ = {
+            isa = PBXGroup;
+            children = (
+                53B5361520F3D2940073AAD0 /* MeatViewController.swift */,
+                53B5361920F3D3240073AAD0 /* BaseViewController.swift */,
+            );
+            path = Controllers;
+            sourceTree = "<group>";
+        };
+        DA78DE3E20EE8FE6005CC2A0 = {
+            isa = PBXGroup;
+            children = (
+                DA78DE4920EE8FE6005CC2A0 /* FastCaico */,
+                DA78DE6120EE8FE8005CC2A0 /* FastCaicoTests */,
+                DA78DE6C20EE8FE8005CC2A0 /* FastCaicoUITests */,
+                DA78DE4820EE8FE6005CC2A0 /* Products */,
+            );
+            sourceTree = "<group>";
+        };
+        DA78DE4820EE8FE6005CC2A0 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                DA78DE4720EE8FE6005CC2A0 /* FastCaico.app */,
+                DA78DE5E20EE8FE8005CC2A0 /* FastCaicoTests.xctest */,
+                DA78DE6920EE8FE8005CC2A0 /* FastCaicoUITests.xctest */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        DA78DE4920EE8FE6005CC2A0 /* FastCaico */ = {
+            isa = PBXGroup;
+            children = (
 				53B5361420F3D22C0073AAD0 /* Controllers */,
-				DA78DE4A20EE8FE6005CC2A0 /* AppDelegate.swift */,
-				DA78DE4C20EE8FE6005CC2A0 /* ViewController.swift */,
-				DA78DE5420EE8FE8005CC2A0 /* Assets.xcassets */,
-				DA78DE5620EE8FE8005CC2A0 /* LaunchScreen.storyboard */,
-				DA78DE5920EE8FE8005CC2A0 /* Info.plist */,
-				DA78DE5120EE8FE6005CC2A0 /* FastCaico.xcdatamodeld */,
-			);
-			path = FastCaico;
-			sourceTree = "<group>";
-		};
-		DA78DE6120EE8FE8005CC2A0 /* FastCaicoTests */ = {
-			isa = PBXGroup;
-			children = (
-				DA78DE6220EE8FE8005CC2A0 /* FastCaicoTests.swift */,
-				DA78DE6420EE8FE8005CC2A0 /* Info.plist */,
-			);
-			path = FastCaicoTests;
-			sourceTree = "<group>";
-		};
-		DA78DE6C20EE8FE8005CC2A0 /* FastCaicoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DA78DE6D20EE8FE8005CC2A0 /* FastCaicoUITests.swift */,
-				DA78DE6F20EE8FE8005CC2A0 /* Info.plist */,
-			);
-			path = FastCaicoUITests;
-			sourceTree = "<group>";
-		};
+				DA78DE7B20EE98A0005CC2A0 /* Model */,
+                DA78DE4A20EE8FE6005CC2A0 /* AppDelegate.swift */,
+                DA78DE4C20EE8FE6005CC2A0 /* ViewController.swift */,
+                DA78DE5420EE8FE8005CC2A0 /* Assets.xcassets */,
+                DA78DE5620EE8FE8005CC2A0 /* LaunchScreen.storyboard */,
+                DA78DE5920EE8FE8005CC2A0 /* Info.plist */,
+                DA78DE5120EE8FE6005CC2A0 /* FastCaico.xcdatamodeld */,
+            );
+            path = FastCaico;
+            sourceTree = "<group>";
+        };
+        DA78DE6120EE8FE8005CC2A0 /* FastCaicoTests */ = {
+            isa = PBXGroup;
+            children = (
+                DA78DE6220EE8FE8005CC2A0 /* FastCaicoTests.swift */,
+                DA78DE6420EE8FE8005CC2A0 /* Info.plist */,
+            );
+            path = FastCaicoTests;
+            sourceTree = "<group>";
+        };
+        DA78DE6C20EE8FE8005CC2A0 /* FastCaicoUITests */ = {
+            isa = PBXGroup;
+            children = (
+                DA78DE6D20EE8FE8005CC2A0 /* FastCaicoUITests.swift */,
+                DA78DE6F20EE8FE8005CC2A0 /* Info.plist */,
+            );
+            path = FastCaicoUITests;
+            sourceTree = "<group>";
+        };
+        DA78DE7B20EE98A0005CC2A0 /* Model */ = {
+            isa = PBXGroup;
+            children = (
+                DA78DE7C20EE98B1005CC2A0 /* Chargeable.swift */,
+                DA78DE7E20EE98BC005CC2A0 /* Ingredient.swift */,
+            );
+            path = Model;
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DA78DE4620EE8FE6005CC2A0 /* FastCaico */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA78DE7220EE8FE8005CC2A0 /* Build configuration list for PBXNativeTarget "FastCaico" */;
-			buildPhases = (
-				DA78DE4320EE8FE6005CC2A0 /* Sources */,
-				DA78DE4420EE8FE6005CC2A0 /* Frameworks */,
-				DA78DE4520EE8FE6005CC2A0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FastCaico;
-			productName = FastCaico;
-			productReference = DA78DE4720EE8FE6005CC2A0 /* FastCaico.app */;
-			productType = "com.apple.product-type.application";
-		};
-		DA78DE5D20EE8FE8005CC2A0 /* FastCaicoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA78DE7520EE8FE8005CC2A0 /* Build configuration list for PBXNativeTarget "FastCaicoTests" */;
-			buildPhases = (
-				DA78DE5A20EE8FE8005CC2A0 /* Sources */,
-				DA78DE5B20EE8FE8005CC2A0 /* Frameworks */,
-				DA78DE5C20EE8FE8005CC2A0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DA78DE6020EE8FE8005CC2A0 /* PBXTargetDependency */,
-			);
-			name = FastCaicoTests;
-			productName = FastCaicoTests;
-			productReference = DA78DE5E20EE8FE8005CC2A0 /* FastCaicoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		DA78DE6820EE8FE8005CC2A0 /* FastCaicoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA78DE7820EE8FE8005CC2A0 /* Build configuration list for PBXNativeTarget "FastCaicoUITests" */;
-			buildPhases = (
-				DA78DE6520EE8FE8005CC2A0 /* Sources */,
-				DA78DE6620EE8FE8005CC2A0 /* Frameworks */,
-				DA78DE6720EE8FE8005CC2A0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DA78DE6B20EE8FE8005CC2A0 /* PBXTargetDependency */,
-			);
-			name = FastCaicoUITests;
-			productName = FastCaicoUITests;
-			productReference = DA78DE6920EE8FE8005CC2A0 /* FastCaicoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
+        DA78DE4620EE8FE6005CC2A0 /* FastCaico */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = DA78DE7220EE8FE8005CC2A0 /* Build configuration list for PBXNativeTarget "FastCaico" */;
+            buildPhases = (
+                DA78DE4320EE8FE6005CC2A0 /* Sources */,
+                DA78DE4420EE8FE6005CC2A0 /* Frameworks */,
+                DA78DE4520EE8FE6005CC2A0 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = FastCaico;
+            productName = FastCaico;
+            productReference = DA78DE4720EE8FE6005CC2A0 /* FastCaico.app */;
+            productType = "com.apple.product-type.application";
+        };
+        DA78DE5D20EE8FE8005CC2A0 /* FastCaicoTests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = DA78DE7520EE8FE8005CC2A0 /* Build configuration list for PBXNativeTarget "FastCaicoTests" */;
+            buildPhases = (
+                DA78DE5A20EE8FE8005CC2A0 /* Sources */,
+                DA78DE5B20EE8FE8005CC2A0 /* Frameworks */,
+                DA78DE5C20EE8FE8005CC2A0 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                DA78DE6020EE8FE8005CC2A0 /* PBXTargetDependency */,
+            );
+            name = FastCaicoTests;
+            productName = FastCaicoTests;
+            productReference = DA78DE5E20EE8FE8005CC2A0 /* FastCaicoTests.xctest */;
+            productType = "com.apple.product-type.bundle.unit-test";
+        };
+        DA78DE6820EE8FE8005CC2A0 /* FastCaicoUITests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = DA78DE7820EE8FE8005CC2A0 /* Build configuration list for PBXNativeTarget "FastCaicoUITests" */;
+            buildPhases = (
+                DA78DE6520EE8FE8005CC2A0 /* Sources */,
+                DA78DE6620EE8FE8005CC2A0 /* Frameworks */,
+                DA78DE6720EE8FE8005CC2A0 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                DA78DE6B20EE8FE8005CC2A0 /* PBXTargetDependency */,
+            );
+            name = FastCaicoUITests;
+            productName = FastCaicoUITests;
+            productReference = DA78DE6920EE8FE8005CC2A0 /* FastCaicoUITests.xctest */;
+            productType = "com.apple.product-type.bundle.ui-testing";
+        };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DA78DE3F20EE8FE6005CC2A0 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = academy;
-				TargetAttributes = {
-					DA78DE4620EE8FE6005CC2A0 = {
-						CreatedOnToolsVersion = 10.0;
-					};
-					DA78DE5D20EE8FE8005CC2A0 = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = DA78DE4620EE8FE6005CC2A0;
-					};
-					DA78DE6820EE8FE8005CC2A0 = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = DA78DE4620EE8FE6005CC2A0;
-					};
-				};
-			};
-			buildConfigurationList = DA78DE4220EE8FE6005CC2A0 /* Build configuration list for PBXProject "FastCaico" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = DA78DE3E20EE8FE6005CC2A0;
-			productRefGroup = DA78DE4820EE8FE6005CC2A0 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				DA78DE4620EE8FE6005CC2A0 /* FastCaico */,
-				DA78DE5D20EE8FE8005CC2A0 /* FastCaicoTests */,
-				DA78DE6820EE8FE8005CC2A0 /* FastCaicoUITests */,
-			);
-		};
+        DA78DE3F20EE8FE6005CC2A0 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 1000;
+                LastUpgradeCheck = 1000;
+                ORGANIZATIONNAME = academy;
+                TargetAttributes = {
+                    DA78DE4620EE8FE6005CC2A0 = {
+                        CreatedOnToolsVersion = 10.0;
+                    };
+                    DA78DE5D20EE8FE8005CC2A0 = {
+                        CreatedOnToolsVersion = 10.0;
+                        TestTargetID = DA78DE4620EE8FE6005CC2A0;
+                    };
+                    DA78DE6820EE8FE8005CC2A0 = {
+                        CreatedOnToolsVersion = 10.0;
+                        TestTargetID = DA78DE4620EE8FE6005CC2A0;
+                    };
+                };
+            };
+            buildConfigurationList = DA78DE4220EE8FE6005CC2A0 /* Build configuration list for PBXProject "FastCaico" */;
+            compatibilityVersion = "Xcode 9.3";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = DA78DE3E20EE8FE6005CC2A0;
+            productRefGroup = DA78DE4820EE8FE6005CC2A0 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                DA78DE4620EE8FE6005CC2A0 /* FastCaico */,
+                DA78DE5D20EE8FE8005CC2A0 /* FastCaicoTests */,
+                DA78DE6820EE8FE8005CC2A0 /* FastCaicoUITests */,
+            );
+        };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DA78DE4520EE8FE6005CC2A0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA78DE5820EE8FE8005CC2A0 /* LaunchScreen.storyboard in Resources */,
-				DA78DE5520EE8FE8005CC2A0 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA78DE5C20EE8FE8005CC2A0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA78DE6720EE8FE8005CC2A0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        DA78DE4520EE8FE6005CC2A0 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                DA78DE5820EE8FE8005CC2A0 /* LaunchScreen.storyboard in Resources */,
+                DA78DE5520EE8FE8005CC2A0 /* Assets.xcassets in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        DA78DE5C20EE8FE8005CC2A0 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        DA78DE6720EE8FE8005CC2A0 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DA78DE4320EE8FE6005CC2A0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53B5361A20F3D3240073AAD0 /* BaseViewController.swift in Sources */,
-				DA78DE4D20EE8FE6005CC2A0 /* ViewController.swift in Sources */,
+        DA78DE4320EE8FE6005CC2A0 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                53B5361A20F3D3240073AAD0 /* BaseViewController.swift in Sources */,
+                DA78DE4D20EE8FE6005CC2A0 /* ViewController.swift in Sources */,
 				53B5361720F3D2940073AAD0 /* MeatViewController.swift in Sources */,
-				DA78DE5320EE8FE6005CC2A0 /* FastCaico.xcdatamodeld in Sources */,
-				DA78DE4B20EE8FE6005CC2A0 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA78DE5A20EE8FE8005CC2A0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA78DE6320EE8FE8005CC2A0 /* FastCaicoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA78DE6520EE8FE8005CC2A0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA78DE6E20EE8FE8005CC2A0 /* FastCaicoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+				DA78DE7D20EE98B1005CC2A0 /* Chargeable.swift in Sources */,
+				DA78DE7F20EE98BC005CC2A0 /* Ingredient.swift in Sources */,
+                DA78DE5320EE8FE6005CC2A0 /* FastCaico.xcdatamodeld in Sources */,
+                DA78DE4B20EE8FE6005CC2A0 /* AppDelegate.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        DA78DE5A20EE8FE8005CC2A0 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                DA78DE6320EE8FE8005CC2A0 /* FastCaicoTests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        DA78DE6520EE8FE8005CC2A0 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                DA78DE6E20EE8FE8005CC2A0 /* FastCaicoUITests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DA78DE6020EE8FE8005CC2A0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA78DE4620EE8FE6005CC2A0 /* FastCaico */;
-			targetProxy = DA78DE5F20EE8FE8005CC2A0 /* PBXContainerItemProxy */;
-		};
-		DA78DE6B20EE8FE8005CC2A0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA78DE4620EE8FE6005CC2A0 /* FastCaico */;
-			targetProxy = DA78DE6A20EE8FE8005CC2A0 /* PBXContainerItemProxy */;
-		};
+        DA78DE6020EE8FE8005CC2A0 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = DA78DE4620EE8FE6005CC2A0 /* FastCaico */;
+            targetProxy = DA78DE5F20EE8FE8005CC2A0 /* PBXContainerItemProxy */;
+        };
+        DA78DE6B20EE8FE8005CC2A0 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = DA78DE4620EE8FE6005CC2A0 /* FastCaico */;
+            targetProxy = DA78DE6A20EE8FE8005CC2A0 /* PBXContainerItemProxy */;
+        };
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DA78DE5620EE8FE8005CC2A0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA78DE5720EE8FE8005CC2A0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
+        DA78DE5620EE8FE8005CC2A0 /* LaunchScreen.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                DA78DE5720EE8FE8005CC2A0 /* Base */,
+            );
+            name = LaunchScreen.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DA78DE7020EE8FE8005CC2A0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		DA78DE7120EE8FE8005CC2A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		DA78DE7320EE8FE8005CC2A0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 45BX7W7QF5;
-				INFOPLIST_FILE = FastCaico/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaico;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		DA78DE7420EE8FE8005CC2A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 45BX7W7QF5;
-				INFOPLIST_FILE = FastCaico/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaico;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		DA78DE7620EE8FE8005CC2A0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 489VWS49NR;
-				INFOPLIST_FILE = FastCaicoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaicoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastCaico.app/FastCaico";
-			};
-			name = Debug;
-		};
-		DA78DE7720EE8FE8005CC2A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 489VWS49NR;
-				INFOPLIST_FILE = FastCaicoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaicoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastCaico.app/FastCaico";
-			};
-			name = Release;
-		};
-		DA78DE7920EE8FE8005CC2A0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 489VWS49NR;
-				INFOPLIST_FILE = FastCaicoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaicoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FastCaico;
-			};
-			name = Debug;
-		};
-		DA78DE7A20EE8FE8005CC2A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 489VWS49NR;
-				INFOPLIST_FILE = FastCaicoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaicoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FastCaico;
-			};
-			name = Release;
-		};
+        DA78DE7020EE8FE8005CC2A0 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+                MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+                MTL_FAST_MATH = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+        DA78DE7120EE8FE8005CC2A0 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                MTL_FAST_MATH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_COMPILATION_MODE = wholemodule;
+                SWIFT_OPTIMIZATION_LEVEL = "-O";
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        DA78DE7320EE8FE8005CC2A0 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 45BX7W7QF5;
+                INFOPLIST_FILE = FastCaico/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaico;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Debug;
+        };
+        DA78DE7420EE8FE8005CC2A0 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 45BX7W7QF5;
+                INFOPLIST_FILE = FastCaico/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaico;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Release;
+        };
+        DA78DE7620EE8FE8005CC2A0 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 489VWS49NR;
+                INFOPLIST_FILE = FastCaicoTests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaicoTests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastCaico.app/FastCaico";
+            };
+            name = Debug;
+        };
+        DA78DE7720EE8FE8005CC2A0 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 489VWS49NR;
+                INFOPLIST_FILE = FastCaicoTests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaicoTests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastCaico.app/FastCaico";
+            };
+            name = Release;
+        };
+        DA78DE7920EE8FE8005CC2A0 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 489VWS49NR;
+                INFOPLIST_FILE = FastCaicoUITests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaicoUITests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = FastCaico;
+            };
+            name = Debug;
+        };
+        DA78DE7A20EE8FE8005CC2A0 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 489VWS49NR;
+                INFOPLIST_FILE = FastCaicoUITests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaicoUITests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = FastCaico;
+            };
+            name = Release;
+        };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA78DE4220EE8FE6005CC2A0 /* Build configuration list for PBXProject "FastCaico" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA78DE7020EE8FE8005CC2A0 /* Debug */,
-				DA78DE7120EE8FE8005CC2A0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA78DE7220EE8FE8005CC2A0 /* Build configuration list for PBXNativeTarget "FastCaico" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA78DE7320EE8FE8005CC2A0 /* Debug */,
-				DA78DE7420EE8FE8005CC2A0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA78DE7520EE8FE8005CC2A0 /* Build configuration list for PBXNativeTarget "FastCaicoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA78DE7620EE8FE8005CC2A0 /* Debug */,
-				DA78DE7720EE8FE8005CC2A0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA78DE7820EE8FE8005CC2A0 /* Build configuration list for PBXNativeTarget "FastCaicoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA78DE7920EE8FE8005CC2A0 /* Debug */,
-				DA78DE7A20EE8FE8005CC2A0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        DA78DE4220EE8FE6005CC2A0 /* Build configuration list for PBXProject "FastCaico" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                DA78DE7020EE8FE8005CC2A0 /* Debug */,
+                DA78DE7120EE8FE8005CC2A0 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        DA78DE7220EE8FE8005CC2A0 /* Build configuration list for PBXNativeTarget "FastCaico" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                DA78DE7320EE8FE8005CC2A0 /* Debug */,
+                DA78DE7420EE8FE8005CC2A0 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        DA78DE7520EE8FE8005CC2A0 /* Build configuration list for PBXNativeTarget "FastCaicoTests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                DA78DE7620EE8FE8005CC2A0 /* Debug */,
+                DA78DE7720EE8FE8005CC2A0 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        DA78DE7820EE8FE8005CC2A0 /* Build configuration list for PBXNativeTarget "FastCaicoUITests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                DA78DE7920EE8FE8005CC2A0 /* Debug */,
+                DA78DE7A20EE8FE8005CC2A0 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		DA78DE5120EE8FE6005CC2A0 /* FastCaico.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DA78DE5220EE8FE6005CC2A0 /* FastCaico.xcdatamodel */,
-			);
-			currentVersion = DA78DE5220EE8FE6005CC2A0 /* FastCaico.xcdatamodel */;
-			path = FastCaico.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
+        DA78DE5120EE8FE6005CC2A0 /* FastCaico.xcdatamodeld */ = {
+            isa = XCVersionGroup;
+            children = (
+                DA78DE5220EE8FE6005CC2A0 /* FastCaico.xcdatamodel */,
+            );
+            currentVersion = DA78DE5220EE8FE6005CC2A0 /* FastCaico.xcdatamodel */;
+            path = FastCaico.xcdatamodeld;
+            sourceTree = "<group>";
+            versionGroupType = wrapper.xcdatamodel;
+        };
 /* End XCVersionGroup section */
-	};
-	rootObject = DA78DE3F20EE8FE6005CC2A0 /* Project object */;
+    };
+    rootObject = DA78DE3F20EE8FE6005CC2A0 /* Project object */;
 }
