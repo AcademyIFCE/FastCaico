@@ -8,7 +8,8 @@
 
 import Foundation
 
-class Chargeable: Ingredient {
+final class Chargeable: Ingredient {
+    typealias Item = Chargeable
     
     var price: Float
     var description: String?

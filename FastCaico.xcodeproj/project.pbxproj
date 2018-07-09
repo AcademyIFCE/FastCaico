@@ -15,7 +15,6 @@
 		53B5362420F3EF6E0073AAD0 /* FastCaicoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5362320F3EF6E0073AAD0 /* FastCaicoHeaderView.swift */; };
 		53B5362620F3F25F0073AAD0 /* FastCaicoNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5362520F3F25F0073AAD0 /* FastCaicoNavigationController.swift */; };
 		DA78DE4B20EE8FE6005CC2A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE4A20EE8FE6005CC2A0 /* AppDelegate.swift */; };
-		DA78DE4D20EE8FE6005CC2A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE4C20EE8FE6005CC2A0 /* ViewController.swift */; };
 		DA78DE5320EE8FE6005CC2A0 /* FastCaico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE5120EE8FE6005CC2A0 /* FastCaico.xcdatamodeld */; };
 		DA78DE5520EE8FE8005CC2A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE5420EE8FE8005CC2A0 /* Assets.xcassets */; };
 		DA78DE5820EE8FE8005CC2A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE5620EE8FE8005CC2A0 /* LaunchScreen.storyboard */; };
@@ -23,6 +22,9 @@
 		DA78DE6E20EE8FE8005CC2A0 /* FastCaicoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE6D20EE8FE8005CC2A0 /* FastCaicoUITests.swift */; };
 		DA78DE7D20EE98B1005CC2A0 /* Chargeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7C20EE98B1005CC2A0 /* Chargeable.swift */; };
 		DA78DE7F20EE98BC005CC2A0 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7E20EE98BC005CC2A0 /* Ingredient.swift */; };
+		DA78DE8320F3EE16005CC2A0 /* Ingredient.json in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE8120F3EE16005CC2A0 /* Ingredient.json */; };
+		DA78DE8420F3EE16005CC2A0 /* Chargeable.json in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE8220F3EE16005CC2A0 /* Chargeable.json */; };
+		DA78DE8620F3EF38005CC2A0 /* ActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE8520F3EF38005CC2A0 /* ActiveRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +54,6 @@
 		53B5362520F3F25F0073AAD0 /* FastCaicoNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCaicoNavigationController.swift; sourceTree = "<group>"; };
 		DA78DE4720EE8FE6005CC2A0 /* FastCaico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastCaico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA78DE4A20EE8FE6005CC2A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA78DE4C20EE8FE6005CC2A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA78DE5220EE8FE6005CC2A0 /* FastCaico.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FastCaico.xcdatamodel; sourceTree = "<group>"; };
 		DA78DE5420EE8FE8005CC2A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA78DE5720EE8FE8005CC2A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +66,9 @@
 		DA78DE6F20EE8FE8005CC2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA78DE7C20EE98B1005CC2A0 /* Chargeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chargeable.swift; sourceTree = "<group>"; };
 		DA78DE7E20EE98BC005CC2A0 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		DA78DE8120F3EE16005CC2A0 /* Ingredient.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ingredient.json; sourceTree = "<group>"; };
+		DA78DE8220F3EE16005CC2A0 /* Chargeable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Chargeable.json; sourceTree = "<group>"; };
+		DA78DE8520F3EF38005CC2A0 /* ActiveRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,11 +140,11 @@
 		DA78DE4920EE8FE6005CC2A0 /* FastCaico */ = {
 			isa = PBXGroup;
 			children = (
+				DA78DE8020F3EDCF005CC2A0 /* MockedData */,
 				53B5361C20F3E16B0073AAD0 /* Views */,
 				53B5361420F3D22C0073AAD0 /* Controllers */,
 				DA78DE7B20EE98A0005CC2A0 /* Model */,
 				DA78DE4A20EE8FE6005CC2A0 /* AppDelegate.swift */,
-				DA78DE4C20EE8FE6005CC2A0 /* ViewController.swift */,
 				DA78DE5420EE8FE8005CC2A0 /* Assets.xcassets */,
 				DA78DE5620EE8FE8005CC2A0 /* LaunchScreen.storyboard */,
 				DA78DE5920EE8FE8005CC2A0 /* Info.plist */,
@@ -174,6 +178,16 @@
 				DA78DE7E20EE98BC005CC2A0 /* Ingredient.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DA78DE8020F3EDCF005CC2A0 /* MockedData */ = {
+			isa = PBXGroup;
+			children = (
+				DA78DE8220F3EE16005CC2A0 /* Chargeable.json */,
+				DA78DE8120F3EE16005CC2A0 /* Ingredient.json */,
+				DA78DE8520F3EF38005CC2A0 /* ActiveRecord.swift */,
+			);
+			path = MockedData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +294,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA78DE8320F3EE16005CC2A0 /* Ingredient.json in Resources */,
+				DA78DE8420F3EE16005CC2A0 /* Chargeable.json in Resources */,
 				DA78DE5820EE8FE8005CC2A0 /* LaunchScreen.storyboard in Resources */,
 				53B5362220F3EF5D0073AAD0 /* FastCaicoHeaderView.xib in Resources */,
 				53B5362020F3E1E00073AAD0 /* MeatTableViewCell.xib in Resources */,
@@ -309,7 +325,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				53B5361A20F3D3240073AAD0 /* BaseViewController.swift in Sources */,
-				DA78DE4D20EE8FE6005CC2A0 /* ViewController.swift in Sources */,
 				53B5361720F3D2940073AAD0 /* MeatViewController.swift in Sources */,
 				53B5362420F3EF6E0073AAD0 /* FastCaicoHeaderView.swift in Sources */,
 				DA78DE7D20EE98B1005CC2A0 /* Chargeable.swift in Sources */,
@@ -318,6 +333,7 @@
 				53B5362620F3F25F0073AAD0 /* FastCaicoNavigationController.swift in Sources */,
 				DA78DE5320EE8FE6005CC2A0 /* FastCaico.xcdatamodeld in Sources */,
 				DA78DE4B20EE8FE6005CC2A0 /* AppDelegate.swift in Sources */,
+				DA78DE8620F3EF38005CC2A0 /* ActiveRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

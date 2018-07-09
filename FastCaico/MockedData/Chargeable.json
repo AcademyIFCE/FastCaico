@@ -1,0 +1,68 @@
+[
+		{
+			"name": "Picanha Argentina",
+			"description": "200g de picanha bovina assadas na brasa",
+			"price": 17.00,
+			"ïmage": "picanhaArgentina"
+		},
+		{
+			"name": "Maminha",
+			"description": "200g de maminha assadas na brasa",
+			"price": 13.00,
+			"ïmage": "maminha"
+		},
+		{
+			"name": "Mista",
+			"description": "300g de maminha e linguiça assadas na brasa",
+			"price": 12.50,
+			"ïmage": "mista"
+		},
+		{
+			"name": "Mistão",
+			"description": "300g de maminha, frango e linguiça assadas na brasa",
+			"price": 12.50,
+			"ïmage": "mistão"
+		},
+		{
+			"name": "Frango a milanesa",
+			"description": "300g de peito de frango empanado frito",
+			"price": 12.00,
+			"ïmage": "frangoAMilanesa"
+		},
+		{
+			"name": "Frango",
+			"description": "300g de frango assadas na brasa",
+			"price": 12.00,
+			"ïmage": "frango"
+		},
+		{
+			"name": "Carne de Sol",
+			"description": "200g de carne de sol bovina assadas na brasa",
+			"price": 15.00,
+			"ïmage": "carneDeSol"
+		},
+		{
+			"name": "Peixe",
+			"description": "300g de filé de abandejo frita",
+			"price": 12.00,
+			"ïmage": "peixe"
+		},
+		{
+			"name": "Linguiça",
+			"description": "300g de linguiça assadas na brasa",
+			"price": 12.00,
+			"ïmage": "linguica"
+		},
+		{
+			"name": "Picanha suína",
+			"description": "200g de picanha suína assadas na brasa",
+			"price": 14.00,
+			"ïmage": "picanhaSuina"
+		},
+		{
+			"name": "Cavala",
+			"description": "300g de posta de cavala frita",
+			"price": 15.00,
+			"ïmage": "cavala"
+		}
+]
