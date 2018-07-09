@@ -9,7 +9,6 @@
 import Foundation
 
 class Ingredient: Codable {
-    
     var name: String
     
     init(withName name: String) {
