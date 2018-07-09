@@ -8,17 +8,9 @@
 
 import Foundation
 
-final class Chargeable: Ingredient {
-    typealias Item = Chargeable
-    
-    var price: Float
+struct Chargeable: Codable, ActiveRecord {
+    var name: String
     var description: String?
     var image: String
-    
-    init(withName name: String, imageName: String, price: Float ) {
-        self.price = price
-        self.image = name
-        super.init(withName: name)
-    }
-    
+    var price: Float
 }

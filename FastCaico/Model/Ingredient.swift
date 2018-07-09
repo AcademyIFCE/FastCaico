@@ -8,11 +8,6 @@
 
 import Foundation
 
-class Ingredient: Codable, ActiveRecord {
-    typealias Item = Ingredient
+struct Ingredient: Codable, ActiveRecord {
     var name: String
-    
-    init(withName name: String) {
-        self.name = name
-    }
 }
