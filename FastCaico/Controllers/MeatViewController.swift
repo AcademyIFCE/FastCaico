@@ -21,12 +21,17 @@ class MeatViewController: BaseViewController {
     }()
     
     private let cellIdentifier = "MEAT_CELL"
+    private let headerIdentifier = "MEAT_HEADER"
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         
         let meatNib = UINib(nibName: "MeatTableViewCell", bundle: Bundle.main)
         self.tableView.register(meatNib, forCellReuseIdentifier: cellIdentifier)
+        
+        let meatHeaderNib = UINib(nibName: "FastCaicoHeaderView", bundle: Bundle.main)
+        self.tableView.register(meatHeaderNib, forHeaderFooterViewReuseIdentifier: headerIdentifier)
+        
         
         
     }
@@ -55,9 +60,28 @@ extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? MeatTableViewCell else {
             return UITableViewCell()
         }
-        
-        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: headerIdentifier) as? FastCaicoHeaderView else {
+            return nil
+        }
+        headerView.titleLabel.text = "1 Escolha a carne"
+        return headerView
+    }
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        if let header = self.tableView.headerView(forSection: 0) as? FastCaicoHeaderView {
+            header.mustShowShadow = true
+        }
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if let header = self.tableView.headerView(forSection: 0) as? FastCaicoHeaderView {
+            header.mustShowShadow = false
+        }
     }
     
 }
