@@ -8,21 +8,20 @@
 
 import Foundation
 protocol ActiveRecord {
-    associatedtype Item: Decodable
-    static func all() -> [Item]?
+    static func all() -> [Self]?
 }
 
-extension ActiveRecord {
+extension ActiveRecord where Self: Decodable {
     static var className: String {
         return String(describing: self)
     }
     
-    static func all() -> [Item]?{
+    static func all() -> [Self]?{
         guard
             let fileURL = Bundle.main.url(forResource: self.className, withExtension: ".json"),
             let data = try? Data(contentsOf: fileURL) else {
             return nil
         }
-        return try? JSONDecoder().decode([Item].self, from: data)
+        return try? JSONDecoder().decode([Self].self, from: data)
     }
 }
