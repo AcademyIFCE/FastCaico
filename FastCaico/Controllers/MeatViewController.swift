@@ -26,8 +26,8 @@ class MeatViewController: BaseViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         
-        self.tableView.register(MeatTableViewCell.asNib(), forCellReuseIdentifier: MeatTableViewCell.reuseIdentifier)
-        self.tableView.register(FastCaicoHeaderView.asNib(), forHeaderFooterViewReuseIdentifier: FastCaicoHeaderView.reuseIdentifier)
+        self.tableView.register(MeatTableViewCell.self)
+        self.tableView.registerHeader(FastCaicoHeaderView.self)
     }
 
     override func viewDidLayoutSubviews() {

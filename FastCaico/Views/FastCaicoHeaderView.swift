@@ -36,6 +36,4 @@ class FastCaicoHeaderView: UITableViewHeaderFooterView {
             self?.contentView.layer.shadowRadius = mustShow ? 1 : 0
         }
     }
-    
-
 }
