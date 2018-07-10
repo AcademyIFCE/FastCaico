@@ -7,20 +7,20 @@
 //
 
 import UIKit
-//import Lottie
+import Lottie
 
 class OrderConfirmationViewController: UIViewController {
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    let animatedView = UIView()
-//    lazy var animatedView: LOTAnimationView = {
-//        let anView = LOTAnimationView(name: "dishAnimation")
-//        anView.translatesAutoresizingMaskIntoConstraints = false
-//        anView.loopAnimation = true
-//        return anView
-//    }()
+    
+    lazy var animatedView: LOTAnimationView = {
+        let anView = LOTAnimationView(name: "dishAnimation")
+        anView.translatesAutoresizingMaskIntoConstraints = false
+        anView.loopAnimation = true
+        return anView
+    }()
     
     lazy var confirmationButton: UIButton = {
         let button = UIButton()
@@ -100,7 +100,7 @@ class OrderConfirmationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: "caicoBlue")
-//        animatedView.play()
+        animatedView.play()
     }
     
     

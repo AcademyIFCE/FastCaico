@@ -21,6 +21,8 @@
 		53B5362220F3EF5D0073AAD0 /* FastCaicoHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53B5362120F3EF5D0073AAD0 /* FastCaicoHeaderView.xib */; };
 		53B5362420F3EF6E0073AAD0 /* FastCaicoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5362320F3EF6E0073AAD0 /* FastCaicoHeaderView.swift */; };
 		53B5362620F3F25F0073AAD0 /* FastCaicoNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5362520F3F25F0073AAD0 /* FastCaicoNavigationController.swift */; };
+		79796A75EEB70EE4EE99A36F /* Pods_FastCaicoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDC95CD47C0D182BFA5ACAC /* Pods_FastCaicoUITests.framework */; };
+		D03B9AF3ABBCA9DC78848B8F /* Pods_FastCaico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4742B65E26EA7673AAF880 /* Pods_FastCaico.framework */; };
 		DA78DE4B20EE8FE6005CC2A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE4A20EE8FE6005CC2A0 /* AppDelegate.swift */; };
 		DA78DE5320EE8FE6005CC2A0 /* FastCaico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE5120EE8FE6005CC2A0 /* FastCaico.xcdatamodeld */; };
 		DA78DE5520EE8FE8005CC2A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE5420EE8FE8005CC2A0 /* Assets.xcassets */; };
@@ -33,6 +35,7 @@
 		DA78DE8420F3EE16005CC2A0 /* MainDish.json in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE8220F3EE16005CC2A0 /* MainDish.json */; };
 		DA78DE8620F3EF38005CC2A0 /* ActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE8520F3EF38005CC2A0 /* ActiveRecord.swift */; };
 		DAD07DAA20F534AC001C1ACF /* Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD07DA920F534AC001C1ACF /* Inspectables.swift */; };
+		DAE751423FCBEA8177A114A9 /* Pods_FastCaicoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D395298B28A6E93A128E9817 /* Pods_FastCaicoTests.framework */; };
 		DAFF16B520F4E99D00FBAAB5 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF16B320F4E99D00FBAAB5 /* OrderConfirmationViewController.swift */; };
 		DAFF16C320F5007B00FBAAB5 /* dishAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = DAFF16C220F5007B00FBAAB5 /* dishAnimation.json */; };
 		DAFF16C520F522B200FBAAB5 /* FoodOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF16C420F522B200FBAAB5 /* FoodOrder.swift */; };
@@ -56,6 +59,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09042F958F23251438F5E3DD /* Pods-FastCaicoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCaicoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastCaicoUITests/Pods-FastCaicoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3EDC95CD47C0D182BFA5ACAC /* Pods_FastCaicoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastCaicoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BDF39397E99397FB5BAEFFA /* Pods-FastCaicoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCaicoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastCaicoUITests/Pods-FastCaicoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4BE6E3FBD61A40A1B017B5DF /* Pods-FastCaico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCaico.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastCaico/Pods-FastCaico.debug.xcconfig"; sourceTree = "<group>"; };
 		537333A720F4E6AD002B9F0F /* ViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
 		537333AA20F4EB0E002B9F0F /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 		537333AC20F4EB60002B9F0F /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
@@ -70,6 +77,11 @@
 		53B5362120F3EF5D0073AAD0 /* FastCaicoHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FastCaicoHeaderView.xib; sourceTree = "<group>"; };
 		53B5362320F3EF6E0073AAD0 /* FastCaicoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCaicoHeaderView.swift; sourceTree = "<group>"; };
 		53B5362520F3F25F0073AAD0 /* FastCaicoNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCaicoNavigationController.swift; sourceTree = "<group>"; };
+		721AA6F2DDFE679D1BA5DB9C /* Pods-FastCaicoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCaicoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastCaicoTests/Pods-FastCaicoTests.release.xcconfig"; sourceTree = "<group>"; };
+		9894E94EE84746056A7AF725 /* Pods-FastCaico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCaico.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastCaico/Pods-FastCaico.release.xcconfig"; sourceTree = "<group>"; };
+		AF4742B65E26EA7673AAF880 /* Pods_FastCaico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastCaico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7A59CD262BF5996F7E18F3D /* Pods-FastCaicoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCaicoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastCaicoTests/Pods-FastCaicoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D395298B28A6E93A128E9817 /* Pods_FastCaicoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastCaicoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA78DE4720EE8FE6005CC2A0 /* FastCaico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastCaico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA78DE4A20EE8FE6005CC2A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA78DE5220EE8FE6005CC2A0 /* FastCaico.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FastCaico.xcdatamodel; sourceTree = "<group>"; };
@@ -99,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03B9AF3ABBCA9DC78848B8F /* Pods_FastCaico.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE751423FCBEA8177A114A9 /* Pods_FastCaicoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79796A75EEB70EE4EE99A36F /* Pods_FastCaicoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +202,29 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		924540EFEEDD064B24649C2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BE6E3FBD61A40A1B017B5DF /* Pods-FastCaico.debug.xcconfig */,
+				9894E94EE84746056A7AF725 /* Pods-FastCaico.release.xcconfig */,
+				B7A59CD262BF5996F7E18F3D /* Pods-FastCaicoTests.debug.xcconfig */,
+				721AA6F2DDFE679D1BA5DB9C /* Pods-FastCaicoTests.release.xcconfig */,
+				4BDF39397E99397FB5BAEFFA /* Pods-FastCaicoUITests.debug.xcconfig */,
+				09042F958F23251438F5E3DD /* Pods-FastCaicoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B000FF12DEAE7B2E85B83C84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF4742B65E26EA7673AAF880 /* Pods_FastCaico.framework */,
+				D395298B28A6E93A128E9817 /* Pods_FastCaicoTests.framework */,
+				3EDC95CD47C0D182BFA5ACAC /* Pods_FastCaicoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA78DE3E20EE8FE6005CC2A0 = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +233,8 @@
 				DA78DE6C20EE8FE8005CC2A0 /* FastCaicoUITests */,
 				DA78DE4820EE8FE6005CC2A0 /* Products */,
 				DAD07DA820F5346E001C1ACF /* Recovered References */,
+				924540EFEEDD064B24649C2A /* Pods */,
+				B000FF12DEAE7B2E85B83C84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -296,9 +336,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA78DE7220EE8FE8005CC2A0 /* Build configuration list for PBXNativeTarget "FastCaico" */;
 			buildPhases = (
+				6741E5D2E26DCC413C6A25F4 /* [CP] Check Pods Manifest.lock */,
 				DA78DE4320EE8FE6005CC2A0 /* Sources */,
 				DA78DE4420EE8FE6005CC2A0 /* Frameworks */,
 				DA78DE4520EE8FE6005CC2A0 /* Resources */,
+				0E4DECC7A3DC4B956280F4BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -313,6 +355,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA78DE7520EE8FE8005CC2A0 /* Build configuration list for PBXNativeTarget "FastCaicoTests" */;
 			buildPhases = (
+				FE83B41E6A90641E95CDC700 /* [CP] Check Pods Manifest.lock */,
 				DA78DE5A20EE8FE8005CC2A0 /* Sources */,
 				DA78DE5B20EE8FE8005CC2A0 /* Frameworks */,
 				DA78DE5C20EE8FE8005CC2A0 /* Resources */,
@@ -331,6 +374,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA78DE7820EE8FE8005CC2A0 /* Build configuration list for PBXNativeTarget "FastCaicoUITests" */;
 			buildPhases = (
+				3094D47E089C1F51B4CAC952 /* [CP] Check Pods Manifest.lock */,
 				DA78DE6520EE8FE8005CC2A0 /* Sources */,
 				DA78DE6620EE8FE8005CC2A0 /* Frameworks */,
 				DA78DE6720EE8FE8005CC2A0 /* Resources */,
@@ -420,6 +464,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E4DECC7A3DC4B956280F4BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FastCaico/Pods-FastCaico-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FastCaico/Pods-FastCaico-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3094D47E089C1F51B4CAC952 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FastCaicoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6741E5D2E26DCC413C6A25F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FastCaico-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE83B41E6A90641E95CDC700 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FastCaicoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA78DE4320EE8FE6005CC2A0 /* Sources */ = {
@@ -609,6 +728,7 @@
 		};
 		DA78DE7320EE8FE8005CC2A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BE6E3FBD61A40A1B017B5DF /* Pods-FastCaico.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -627,6 +747,7 @@
 		};
 		DA78DE7420EE8FE8005CC2A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9894E94EE84746056A7AF725 /* Pods-FastCaico.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -645,6 +766,7 @@
 		};
 		DA78DE7620EE8FE8005CC2A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7A59CD262BF5996F7E18F3D /* Pods-FastCaicoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -666,6 +788,7 @@
 		};
 		DA78DE7720EE8FE8005CC2A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 721AA6F2DDFE679D1BA5DB9C /* Pods-FastCaicoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -687,6 +810,7 @@
 		};
 		DA78DE7920EE8FE8005CC2A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BDF39397E99397FB5BAEFFA /* Pods-FastCaicoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -707,6 +831,7 @@
 		};
 		DA78DE7A20EE8FE8005CC2A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09042F958F23251438F5E3DD /* Pods-FastCaicoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
