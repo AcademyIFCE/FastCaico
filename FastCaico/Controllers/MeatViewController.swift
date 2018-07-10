@@ -63,8 +63,8 @@ extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
-//        let dish = dishes?[indexPath.row]
-//        cell.setup(with: dish)
+        let dish = dishes?[indexPath.row]
+        cell.setup(with: dish!)
         return cell
     }
     

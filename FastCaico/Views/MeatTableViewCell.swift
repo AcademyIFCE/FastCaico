@@ -19,7 +19,7 @@ class MeatTableViewCell: UITableViewCell {
         self.meatImageView.image = UIImage(named: dish.image)
         self.titleLabel.text = dish.name
         self.descriptionLabel.text = dish.description
-        self.priceLabel.text = "R$ \(dish.price)"
+        self.priceLabel.text = String(format: "R$ %.2f", dish.price).replacingOccurrences(of: ".", with: ",")
     }
     
 }
