@@ -11,6 +11,7 @@ import UIKit
 class FastCaicoHeaderView: UITableViewHeaderFooterView {
 
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
     
     var mustShowShadow: Bool = false {
         didSet {

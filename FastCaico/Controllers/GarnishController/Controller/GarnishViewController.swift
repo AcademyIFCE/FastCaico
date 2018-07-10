@@ -11,6 +11,8 @@ import UIKit
 class GarnishViewController: BaseViewController {
 
     @IBOutlet weak var garnishTableView: UITableView!
+    
+    let garnishes = Garnish.all()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.garnishTableView.delegate = self
@@ -27,12 +29,13 @@ class GarnishViewController: BaseViewController {
 extension GarnishViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return garnishes?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as GarnishTableViewCell
-        cell.nameLabel.text = "Baião"
+        let garnish = garnishes?[indexPath.row]
+        cell.setup(with: garnish)
         return cell
     }
     
@@ -40,6 +43,7 @@ extension GarnishViewController : UITableViewDelegate, UITableViewDataSource {
         
         let headerView = tableView.dequeueReusableHeader() as FastCaicoHeaderView
         headerView.titleLabel.text = "2 Escolha os acompanhamentos:"
+        headerView.subtitleLabel.text = "Selecione de 1 a 4 acompanhamentos"
         return headerView
     }
     
@@ -49,6 +53,10 @@ extension GarnishViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         return 50
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        self.applyShadowToHeader(garnishTableView)
     }
     
 }

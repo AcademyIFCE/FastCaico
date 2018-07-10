@@ -22,6 +22,8 @@ class GarnishTableViewCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var quantityLabel: UILabel!
+    @IBOutlet weak private var minusButton: UIButton!
+    @IBOutlet weak private var plusButton: UIButton!
     
     weak var delegate: GarnishTableViewCellDelegate?
     
@@ -31,14 +33,19 @@ class GarnishTableViewCell: UITableViewCell {
         label.font = UIFont.systemFont(ofSize: 22, weight: .bold)
         return label
     }()
-    
+
+    func setup(with garnish: Garnish?) {
+        self.nameLabel.text = garnish?.name
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.addShadowTo(minusButton)
+        self.addShadowTo(plusButton)
+        
+        
         
     }
-
-    
     @IBAction func didTapPlusButton(_ sender: UIButton) {
         
         if let valueString = self.quantityLabel.text, let actualValue = Int(valueString) {
@@ -80,7 +87,14 @@ class GarnishTableViewCell: UITableViewCell {
                 self.quantityLabel.text = self.auxLabel.text
             }
         }
-
+    }
+    
+    private func addShadowTo(_ button: UIButton) {
+        button.layer.shadowOffset = CGSize(width: 3, height: 3)
+        button.layer.shadowOpacity = 0.3
+        button.layer.shadowRadius = 2
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.masksToBounds = false
     }
     
 }

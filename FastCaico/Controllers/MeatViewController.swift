@@ -61,6 +61,7 @@ extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
 
         let headerView = tableView.dequeueReusableHeader() as FastCaicoHeaderView
         headerView.titleLabel.text = "1 Escolha a carne"
+        headerView.subtitleLabel.text = nil
         return headerView
     }
     
@@ -76,17 +77,6 @@ extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
         self.applyShadowToHeader(tableView)
     }
     
-    private func verifyShadowNeed() -> Bool {
-        let cellHeight = self.tableView.visibleCells.first?.frame.height
-        let contentOffSet = self.tableView.contentOffset
-        
-        return contentOffSet.y > cellHeight!/CGFloat(6)
-    }
-    
-    private func applyShadowToHeader(_ tableView: UITableView) {
-        if let header = self.tableView.headerView(forSection: 0) as? FastCaicoHeaderView {
-            header.mustShowShadow = verifyShadowNeed()
-        }
-    }
+
 
 }

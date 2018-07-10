@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderSummaryView" customModule="FastCaico" customModuleProvider="target">
+            <connections>
+                <outlet property="addView" destination="lc9-jS-1dQ" id="zuc-3B-WBh"/>
+                <outlet property="descriptionLabel" destination="aCk-9o-WnC" id="qhx-BI-D9K"/>
+                <outlet property="priceLabel" destination="Qjk-Al-XMd" id="0vA-JI-5Ec"/>
+                <outlet property="titleLabel" destination="xDt-r1-q1O" id="SwJ-EU-7hv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDt-r1-q1O">
+                    <rect key="frame" x="16" y="8" width="47.5" height="21.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" name="caicoBlue"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="1 Pirão de queijo, 1 Arroz branco, 1 Salada crua, 1 Batata doce" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCk-9o-WnC">
+                    <rect key="frame" x="16" y="29.5" width="162.5" height="50.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" name="caicocBlueOpacity"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lc9-jS-1dQ">
+                    <rect key="frame" x="209" y="23" width="150" height="48"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="faS-fb-aEO">
+                            <rect key="frame" x="34" y="4.5" width="82.5" height="39.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adicionar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzh-ih-rGi">
+                                    <rect key="frame" x="0.0" y="0.0" width="82.5" height="21.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjk-Al-XMd">
+                                    <rect key="frame" x="22.5" y="21.5" width="37.5" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" name="caicocBlueOpacity"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="caicoBlue"/>
+                    <constraints>
+                        <constraint firstItem="faS-fb-aEO" firstAttribute="centerY" secondItem="lc9-jS-1dQ" secondAttribute="centerY" id="KCE-IE-f5n"/>
+                        <constraint firstAttribute="width" constant="150" id="L7k-xZ-iUx"/>
+                        <constraint firstItem="faS-fb-aEO" firstAttribute="centerX" secondItem="lc9-jS-1dQ" secondAttribute="centerX" id="gZg-Oc-USw"/>
+                        <constraint firstAttribute="height" constant="48" id="lRA-7S-tKR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xDt-r1-q1O" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="2E2-US-gRb"/>
+                <constraint firstItem="xDt-r1-q1O" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="6Be-3T-FRg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lc9-jS-1dQ" secondAttribute="trailing" constant="16" id="Frd-tM-AQS"/>
+                <constraint firstItem="aCk-9o-WnC" firstAttribute="leading" secondItem="xDt-r1-q1O" secondAttribute="leading" id="WsE-Yf-Ubc"/>
+                <constraint firstItem="lc9-jS-1dQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aCk-9o-WnC" secondAttribute="trailing" constant="16" id="e6s-jz-Fgs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="aCk-9o-WnC" secondAttribute="bottom" constant="8" id="eMm-g3-cNc"/>
+                <constraint firstItem="lc9-jS-1dQ" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="qVK-Wl-U1x"/>
+                <constraint firstItem="aCk-9o-WnC" firstAttribute="top" secondItem="xDt-r1-q1O" secondAttribute="bottom" id="xYq-hQ-kRh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="-233"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="caicoBlue">
+            <color red="0.20784313725490197" green="0.20392156862745098" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="caicocBlueOpacity">
+            <color red="0.71764705882352942" green="0.71372549019607845" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
