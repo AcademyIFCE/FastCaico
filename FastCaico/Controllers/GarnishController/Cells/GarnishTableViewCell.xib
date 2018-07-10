@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="GarnishTableViewCell" customModule="FastCaico" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="467" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="467" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKE-0f-27t">
+                        <rect key="frame" x="20" y="16" width="49.5" height="27.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        <color key="textColor" name="caicoBlue"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="egr-oX-09l">
+                        <rect key="frame" x="329" y="0.0" width="122" height="59.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdx-1F-Hb4">
+                                <rect key="frame" x="0.0" y="15" width="30" height="30"/>
+                                <color key="backgroundColor" name="caicocBlueOpacity"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLessButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="r7w-Z6-50T"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsR-rG-rxc">
+                                <rect key="frame" x="46" y="16.5" width="30" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55u-8e-4JC">
+                                <rect key="frame" x="92" y="15" width="30" height="30"/>
+                                <color key="backgroundColor" name="caicoBlue"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapPlusButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Axw-qs-6Ax"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="wKE-0f-27t" secondAttribute="bottom" constant="16" id="7Gr-kW-NGT"/>
+                    <constraint firstItem="egr-oX-09l" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wKE-0f-27t" secondAttribute="trailing" constant="16" id="K1c-F9-PK0"/>
+                    <constraint firstAttribute="trailing" secondItem="egr-oX-09l" secondAttribute="trailing" constant="16" id="Rht-dv-hbH"/>
+                    <constraint firstItem="wKE-0f-27t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="VU3-AT-Yaa"/>
+                    <constraint firstItem="egr-oX-09l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fRi-XC-WTW"/>
+                    <constraint firstItem="wKE-0f-27t" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="fap-Tt-Wuj"/>
+                    <constraint firstAttribute="bottom" secondItem="egr-oX-09l" secondAttribute="bottom" id="nGV-gu-xBn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="wKE-0f-27t" id="i0r-7Q-DBI"/>
+                <outlet property="quantityLabel" destination="WsR-rG-rxc" id="fB6-ai-T3S"/>
+            </connections>
+            <point key="canvasLocation" x="107.5" y="62"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="caicoBlue">
+            <color red="0.20784313725490197" green="0.20392156862745098" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="caicocBlueOpacity">
+            <color red="0.20784313725490197" green="0.20392156862745098" blue="0.53333333333333333" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,6 +1,0 @@
-framework module Pods_FastCaico {
-  umbrella header "Pods-FastCaico-umbrella.h"
-
-  export *
-  module * { export * }
-}

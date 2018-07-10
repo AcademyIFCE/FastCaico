@@ -26,8 +26,8 @@ class MeatViewController: BaseViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         
-        self.tableView.register(MeatTableViewCell.asNib(), forCellReuseIdentifier: MeatTableViewCell.reuseIdentifier)
-        self.tableView.register(FastCaicoHeaderView.asNib(), forHeaderFooterViewReuseIdentifier: FastCaicoHeaderView.reuseIdentifier)
+        self.tableView.register(MeatTableViewCell.self)
+        self.tableView.registerHeader(FastCaicoHeaderView.self)
     }
 
     override func viewDidLayoutSubviews() {
@@ -62,6 +62,14 @@ extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
         let headerView = tableView.dequeueReusableHeader() as FastCaicoHeaderView
         headerView.titleLabel.text = "1 Escolha a carne"
         return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+        return 50
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

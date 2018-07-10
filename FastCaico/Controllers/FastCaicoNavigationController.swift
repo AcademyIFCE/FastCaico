@@ -16,6 +16,10 @@ class FastCaicoNavigationController: UINavigationController {
         self.navigationBar.backgroundColor = .white
         self.navigationBar.isTranslucent = false
         self.navigationBar.shadowImage = UIImage()
+        let caicoColor = UIColor(named: "caicoBlue")
+        self.navigationBar.tintColor = caicoColor
+        let textAttributes: [NSAttributedString.Key : Any] = [NSAttributedString.Key.foregroundColor: caicoColor ?? .black]
+        self.navigationBar.titleTextAttributes = textAttributes
 
     }
 }

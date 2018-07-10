@@ -10,6 +10,10 @@
 		537333A820F4E6AD002B9F0F /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537333A720F4E6AD002B9F0F /* ViewProtocols.swift */; };
 		537333AB20F4EB0E002B9F0F /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537333AA20F4EB0E002B9F0F /* UITableViewCellExtension.swift */; };
 		537333AD20F4EB60002B9F0F /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537333AC20F4EB60002B9F0F /* UITableViewExtension.swift */; };
+		537333B220F4F8EF002B9F0F /* GarnishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537333B020F4F8EF002B9F0F /* GarnishViewController.swift */; };
+		537333B320F4F8EF002B9F0F /* GarnishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 537333B120F4F8EF002B9F0F /* GarnishViewController.xib */; };
+		537333B720F4FC5E002B9F0F /* GarnishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537333B520F4FC5E002B9F0F /* GarnishTableViewCell.swift */; };
+		537333B820F4FC5E002B9F0F /* GarnishTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 537333B620F4FC5E002B9F0F /* GarnishTableViewCell.xib */; };
 		53B5361720F3D2940073AAD0 /* MeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5361520F3D2940073AAD0 /* MeatViewController.swift */; };
 		53B5361A20F3D3240073AAD0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5361920F3D3240073AAD0 /* BaseViewController.swift */; };
 		53B5361F20F3E1E00073AAD0 /* MeatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5361D20F3E1E00073AAD0 /* MeatTableViewCell.swift */; };
@@ -55,6 +59,10 @@
 		537333A720F4E6AD002B9F0F /* ViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
 		537333AA20F4EB0E002B9F0F /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 		537333AC20F4EB60002B9F0F /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		537333B020F4F8EF002B9F0F /* GarnishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarnishViewController.swift; sourceTree = "<group>"; };
+		537333B120F4F8EF002B9F0F /* GarnishViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GarnishViewController.xib; sourceTree = "<group>"; };
+		537333B520F4FC5E002B9F0F /* GarnishTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarnishTableViewCell.swift; sourceTree = "<group>"; };
+		537333B620F4FC5E002B9F0F /* GarnishTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GarnishTableViewCell.xib; sourceTree = "<group>"; };
 		53B5361520F3D2940073AAD0 /* MeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatViewController.swift; sourceTree = "<group>"; };
 		53B5361920F3D3240073AAD0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		53B5361D20F3E1E00073AAD0 /* MeatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatTableViewCell.swift; sourceTree = "<group>"; };
@@ -129,10 +137,38 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		537333AE20F4F88A002B9F0F /* GarnishController */ = {
+			isa = PBXGroup;
+			children = (
+				537333B420F4FC0D002B9F0F /* Cells */,
+				537333AF20F4F8B0002B9F0F /* Controller */,
+			);
+			path = GarnishController;
+			sourceTree = "<group>";
+		};
+		537333AF20F4F8B0002B9F0F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				537333B020F4F8EF002B9F0F /* GarnishViewController.swift */,
+				537333B120F4F8EF002B9F0F /* GarnishViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		537333B420F4FC0D002B9F0F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				537333B520F4FC5E002B9F0F /* GarnishTableViewCell.swift */,
+				537333B620F4FC5E002B9F0F /* GarnishTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		53B5361420F3D22C0073AAD0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				DAFF16B220F4E98200FBAAB5 /* OrderConfirmation */,
+				537333AE20F4F88A002B9F0F /* GarnishController */,
 				53B5361520F3D2940073AAD0 /* MeatViewController.swift */,
 				53B5361920F3D3240073AAD0 /* BaseViewController.swift */,
 				53B5362520F3F25F0073AAD0 /* FastCaicoNavigationController.swift */,
@@ -360,7 +396,9 @@
 				DA78DE8320F3EE16005CC2A0 /* Garnish.json in Resources */,
 				DA78DE8420F3EE16005CC2A0 /* MainDish.json in Resources */,
 				DAFF16C320F5007B00FBAAB5 /* dishAnimation.json in Resources */,
+				537333B820F4FC5E002B9F0F /* GarnishTableViewCell.xib in Resources */,
 				DA78DE5820EE8FE8005CC2A0 /* LaunchScreen.storyboard in Resources */,
+				537333B320F4F8EF002B9F0F /* GarnishViewController.xib in Resources */,
 				53B5362220F3EF5D0073AAD0 /* FastCaicoHeaderView.xib in Resources */,
 				53B5362020F3E1E00073AAD0 /* MeatTableViewCell.xib in Resources */,
 				DA78DE5520EE8FE8005CC2A0 /* Assets.xcassets in Resources */,
@@ -397,10 +435,12 @@
 				537333A820F4E6AD002B9F0F /* ViewProtocols.swift in Sources */,
 				537333AD20F4EB60002B9F0F /* UITableViewExtension.swift in Sources */,
 				DA78DE7D20EE98B1005CC2A0 /* MainDish.swift in Sources */,
+				537333B720F4FC5E002B9F0F /* GarnishTableViewCell.swift in Sources */,
 				53B5361F20F3E1E00073AAD0 /* MeatTableViewCell.swift in Sources */,
 				DA78DE7F20EE98BC005CC2A0 /* Garnish.swift in Sources */,
 				53B5362620F3F25F0073AAD0 /* FastCaicoNavigationController.swift in Sources */,
 				DA78DE5320EE8FE6005CC2A0 /* FastCaico.xcdatamodeld in Sources */,
+				537333B220F4F8EF002B9F0F /* GarnishViewController.swift in Sources */,
 				DA78DE4B20EE8FE6005CC2A0 /* AppDelegate.swift in Sources */,
 				DAFF16C520F522B200FBAAB5 /* FoodOrder.swift in Sources */,
 				DAFF16B520F4E99D00FBAAB5 /* OrderConfirmationViewController.swift in Sources */,
