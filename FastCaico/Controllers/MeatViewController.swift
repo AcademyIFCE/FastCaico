@@ -20,22 +20,14 @@ class MeatViewController: BaseViewController {
         return table
     }()
     
-    private let cellIdentifier = "MEAT_CELL"
-    private let headerIdentifier = "MEAT_HEADER"
     private let dishes = Chargeable.all()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         
-        let meatNib = UINib(nibName: "MeatTableViewCell", bundle: Bundle.main)
-        self.tableView.register(meatNib, forCellReuseIdentifier: cellIdentifier)
-        
-        let meatHeaderNib = UINib(nibName: "FastCaicoHeaderView", bundle: Bundle.main)
-        self.tableView.register(meatHeaderNib, forHeaderFooterViewReuseIdentifier: headerIdentifier)
-        
-        
-        
+        self.tableView.register(MeatTableViewCell.asNib(), forCellReuseIdentifier: MeatTableViewCell.reuseIdentifier)
+        self.tableView.register(FastCaicoHeaderView.asNib(), forHeaderFooterViewReuseIdentifier: FastCaicoHeaderView.reuseIdentifier)
     }
 
     override func viewDidLayoutSubviews() {
@@ -59,20 +51,15 @@ extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? MeatTableViewCell else {
-            return UITableViewCell()
-        }
-        
         let dish = dishes?[indexPath.row]
-        cell.setup(with: dish!)
+        let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as MeatTableViewCell
+        cell.setup(with: dish)
         return cell
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
-        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: headerIdentifier) as? FastCaicoHeaderView else {
-            return nil
-        }
+
+        let headerView = tableView.dequeueReusableHeader() as FastCaicoHeaderView
         headerView.titleLabel.text = "1 Escolha a carne"
         return headerView
     }
