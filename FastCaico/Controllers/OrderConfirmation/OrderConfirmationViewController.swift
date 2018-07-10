@@ -14,7 +14,7 @@ class OrderConfirmationViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
+
     lazy var animatedView: LOTAnimationView = {
         let anView = LOTAnimationView(name: "dishAnimation")
         anView.translatesAutoresizingMaskIntoConstraints = false
@@ -100,7 +100,7 @@ class OrderConfirmationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: "caicoBlue")
-        animatedView.play()
+//        animatedView.play()
     }
     
     

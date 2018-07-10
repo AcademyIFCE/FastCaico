@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		537333A820F4E6AD002B9F0F /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537333A720F4E6AD002B9F0F /* ViewProtocols.swift */; };
+		537333AB20F4EB0E002B9F0F /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537333AA20F4EB0E002B9F0F /* UITableViewCellExtension.swift */; };
+		537333AD20F4EB60002B9F0F /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537333AC20F4EB60002B9F0F /* UITableViewExtension.swift */; };
 		53B5361720F3D2940073AAD0 /* MeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5361520F3D2940073AAD0 /* MeatViewController.swift */; };
 		53B5361A20F3D3240073AAD0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5361920F3D3240073AAD0 /* BaseViewController.swift */; };
 		53B5361F20F3E1E00073AAD0 /* MeatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5361D20F3E1E00073AAD0 /* MeatTableViewCell.swift */; };
@@ -20,14 +23,15 @@
 		DA78DE5820EE8FE8005CC2A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE5620EE8FE8005CC2A0 /* LaunchScreen.storyboard */; };
 		DA78DE6320EE8FE8005CC2A0 /* FastCaicoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE6220EE8FE8005CC2A0 /* FastCaicoTests.swift */; };
 		DA78DE6E20EE8FE8005CC2A0 /* FastCaicoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE6D20EE8FE8005CC2A0 /* FastCaicoUITests.swift */; };
-		DA78DE7D20EE98B1005CC2A0 /* Chargeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7C20EE98B1005CC2A0 /* Chargeable.swift */; };
-		DA78DE7F20EE98BC005CC2A0 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7E20EE98BC005CC2A0 /* Ingredient.swift */; };
-		DA78DE8320F3EE16005CC2A0 /* Ingredient.json in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE8120F3EE16005CC2A0 /* Ingredient.json */; };
-		DA78DE8420F3EE16005CC2A0 /* Chargeable.json in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE8220F3EE16005CC2A0 /* Chargeable.json */; };
+		DA78DE7D20EE98B1005CC2A0 /* MainDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7C20EE98B1005CC2A0 /* MainDish.swift */; };
+		DA78DE7F20EE98BC005CC2A0 /* Garnish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7E20EE98BC005CC2A0 /* Garnish.swift */; };
+		DA78DE8320F3EE16005CC2A0 /* Garnish.json in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE8120F3EE16005CC2A0 /* Garnish.json */; };
+		DA78DE8420F3EE16005CC2A0 /* MainDish.json in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE8220F3EE16005CC2A0 /* MainDish.json */; };
 		DA78DE8620F3EF38005CC2A0 /* ActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE8520F3EF38005CC2A0 /* ActiveRecord.swift */; };
+		DAD07DAA20F534AC001C1ACF /* Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD07DA920F534AC001C1ACF /* Inspectables.swift */; };
 		DAFF16B520F4E99D00FBAAB5 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF16B320F4E99D00FBAAB5 /* OrderConfirmationViewController.swift */; };
-		DAFF16BE20F4ED7500FBAAB5 /* Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF16BD20F4ED7500FBAAB5 /* Inspectables.swift */; };
 		DAFF16C320F5007B00FBAAB5 /* dishAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = DAFF16C220F5007B00FBAAB5 /* dishAnimation.json */; };
+		DAFF16C520F522B200FBAAB5 /* FoodOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF16C420F522B200FBAAB5 /* FoodOrder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		537333A720F4E6AD002B9F0F /* ViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
+		537333AA20F4EB0E002B9F0F /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		537333AC20F4EB60002B9F0F /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		53B5361520F3D2940073AAD0 /* MeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatViewController.swift; sourceTree = "<group>"; };
 		53B5361920F3D3240073AAD0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		53B5361D20F3E1E00073AAD0 /* MeatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatTableViewCell.swift; sourceTree = "<group>"; };
@@ -67,14 +74,16 @@
 		DA78DE6920EE8FE8005CC2A0 /* FastCaicoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastCaicoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA78DE6D20EE8FE8005CC2A0 /* FastCaicoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCaicoUITests.swift; sourceTree = "<group>"; };
 		DA78DE6F20EE8FE8005CC2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA78DE7C20EE98B1005CC2A0 /* Chargeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chargeable.swift; sourceTree = "<group>"; };
-		DA78DE7E20EE98BC005CC2A0 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
-		DA78DE8120F3EE16005CC2A0 /* Ingredient.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ingredient.json; sourceTree = "<group>"; };
-		DA78DE8220F3EE16005CC2A0 /* Chargeable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Chargeable.json; sourceTree = "<group>"; };
+		DA78DE7C20EE98B1005CC2A0 /* MainDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDish.swift; sourceTree = "<group>"; };
+		DA78DE7E20EE98BC005CC2A0 /* Garnish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garnish.swift; sourceTree = "<group>"; };
+		DA78DE8120F3EE16005CC2A0 /* Garnish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Garnish.json; sourceTree = "<group>"; };
+		DA78DE8220F3EE16005CC2A0 /* MainDish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainDish.json; sourceTree = "<group>"; };
 		DA78DE8520F3EF38005CC2A0 /* ActiveRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveRecord.swift; sourceTree = "<group>"; };
+		DAD07DA920F534AC001C1ACF /* Inspectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inspectables.swift; sourceTree = "<group>"; };
 		DAFF16B320F4E99D00FBAAB5 /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 		DAFF16BD20F4ED7500FBAAB5 /* Inspectables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspectables.swift; sourceTree = "<group>"; };
 		DAFF16C220F5007B00FBAAB5 /* dishAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dishAnimation.json; sourceTree = "<group>"; };
+		DAFF16C420F522B200FBAAB5 /* FoodOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOrder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +111,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		537333A620F4E69C002B9F0F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				537333A720F4E6AD002B9F0F /* ViewProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		537333A920F4EAEA002B9F0F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DAD07DA920F534AC001C1ACF /* Inspectables.swift */,
+				537333AA20F4EB0E002B9F0F /* UITableViewCellExtension.swift */,
+				537333AC20F4EB60002B9F0F /* UITableViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		53B5361420F3D22C0073AAD0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +158,7 @@
 				DA78DE6120EE8FE8005CC2A0 /* FastCaicoTests */,
 				DA78DE6C20EE8FE8005CC2A0 /* FastCaicoUITests */,
 				DA78DE4820EE8FE6005CC2A0 /* Products */,
+				DAD07DA820F5346E001C1ACF /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,7 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				DAFF16BF20F4F74500FBAAB5 /* Resources */,
-				DAFF16BA20F4EAF100FBAAB5 /* Extensions */,
+				537333A920F4EAEA002B9F0F /* Extensions */,
+				537333A620F4E69C002B9F0F /* Protocols */,
 				DA78DE8020F3EDCF005CC2A0 /* MockedData */,
 				53B5361C20F3E16B0073AAD0 /* Views */,
 				53B5361420F3D22C0073AAD0 /* Controllers */,
@@ -183,8 +212,9 @@
 		DA78DE7B20EE98A0005CC2A0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DA78DE7C20EE98B1005CC2A0 /* Chargeable.swift */,
-				DA78DE7E20EE98BC005CC2A0 /* Ingredient.swift */,
+				DA78DE7C20EE98B1005CC2A0 /* MainDish.swift */,
+				DA78DE7E20EE98BC005CC2A0 /* Garnish.swift */,
+				DAFF16C420F522B200FBAAB5 /* FoodOrder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,11 +222,19 @@
 		DA78DE8020F3EDCF005CC2A0 /* MockedData */ = {
 			isa = PBXGroup;
 			children = (
-				DA78DE8220F3EE16005CC2A0 /* Chargeable.json */,
-				DA78DE8120F3EE16005CC2A0 /* Ingredient.json */,
+				DA78DE8220F3EE16005CC2A0 /* MainDish.json */,
+				DA78DE8120F3EE16005CC2A0 /* Garnish.json */,
 				DA78DE8520F3EF38005CC2A0 /* ActiveRecord.swift */,
 			);
 			path = MockedData;
+			sourceTree = "<group>";
+		};
+		DAD07DA820F5346E001C1ACF /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				DAFF16BD20F4ED7500FBAAB5 /* Inspectables.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		DAFF16B220F4E98200FBAAB5 /* OrderConfirmation */ = {
@@ -205,14 +243,6 @@
 				DAFF16B320F4E99D00FBAAB5 /* OrderConfirmationViewController.swift */,
 			);
 			path = OrderConfirmation;
-			sourceTree = "<group>";
-		};
-		DAFF16BA20F4EAF100FBAAB5 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				DAFF16BD20F4ED7500FBAAB5 /* Inspectables.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		DAFF16BF20F4F74500FBAAB5 /* Resources */ = {
@@ -327,10 +357,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA78DE8320F3EE16005CC2A0 /* Ingredient.json in Resources */,
-				DA78DE8420F3EE16005CC2A0 /* Chargeable.json in Resources */,
-				DA78DE5820EE8FE8005CC2A0 /* LaunchScreen.storyboard in Resources */,
+				DA78DE8320F3EE16005CC2A0 /* Garnish.json in Resources */,
+				DA78DE8420F3EE16005CC2A0 /* MainDish.json in Resources */,
 				DAFF16C320F5007B00FBAAB5 /* dishAnimation.json in Resources */,
+				DA78DE5820EE8FE8005CC2A0 /* LaunchScreen.storyboard in Resources */,
 				53B5362220F3EF5D0073AAD0 /* FastCaicoHeaderView.xib in Resources */,
 				53B5362020F3E1E00073AAD0 /* MeatTableViewCell.xib in Resources */,
 				DA78DE5520EE8FE8005CC2A0 /* Assets.xcassets in Resources */,
@@ -358,16 +388,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAFF16BE20F4ED7500FBAAB5 /* Inspectables.swift in Sources */,
 				53B5361A20F3D3240073AAD0 /* BaseViewController.swift in Sources */,
+				DAD07DAA20F534AC001C1ACF /* Inspectables.swift in Sources */,
 				53B5361720F3D2940073AAD0 /* MeatViewController.swift in Sources */,
 				53B5362420F3EF6E0073AAD0 /* FastCaicoHeaderView.swift in Sources */,
-				DA78DE7D20EE98B1005CC2A0 /* Chargeable.swift in Sources */,
+				537333AB20F4EB0E002B9F0F /* UITableViewCellExtension.swift in Sources */,
+				DA78DE7D20EE98B1005CC2A0 /* MainDish.swift in Sources */,
+				537333A820F4E6AD002B9F0F /* ViewProtocols.swift in Sources */,
+				537333AD20F4EB60002B9F0F /* UITableViewExtension.swift in Sources */,
+				DA78DE7D20EE98B1005CC2A0 /* MainDish.swift in Sources */,
 				53B5361F20F3E1E00073AAD0 /* MeatTableViewCell.swift in Sources */,
-				DA78DE7F20EE98BC005CC2A0 /* Ingredient.swift in Sources */,
+				DA78DE7F20EE98BC005CC2A0 /* Garnish.swift in Sources */,
 				53B5362620F3F25F0073AAD0 /* FastCaicoNavigationController.swift in Sources */,
 				DA78DE5320EE8FE6005CC2A0 /* FastCaico.xcdatamodeld in Sources */,
 				DA78DE4B20EE8FE6005CC2A0 /* AppDelegate.swift in Sources */,
+				DAFF16C520F522B200FBAAB5 /* FoodOrder.swift in Sources */,
 				DAFF16B520F4E99D00FBAAB5 /* OrderConfirmationViewController.swift in Sources */,
 				DA78DE8620F3EF38005CC2A0 /* ActiveRecord.swift in Sources */,
 			);

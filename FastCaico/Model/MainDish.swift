@@ -1,5 +1,5 @@
 //
-//  Chargeable.swift
+//  MainDish.swift
 //  FastCaico
 //
 //  Created by Yuri on 05/07/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Chargeable: Codable, ActiveRecord {
+struct MainDish: Codable, ActiveRecord {
     var name: String
     var description: String?
     var image: String

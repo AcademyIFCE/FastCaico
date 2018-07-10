@@ -1,5 +1,5 @@
 //
-//  Ingredient.swift
+//  Garnish.swift
 //  FastCaico
 //
 //  Created by Yuri on 05/07/18.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Ingredient: Codable, ActiveRecord {
+struct Garnish: Codable, ActiveRecord {
     var name: String
 }
