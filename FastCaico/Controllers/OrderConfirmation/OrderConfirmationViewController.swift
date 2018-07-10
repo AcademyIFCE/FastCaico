@@ -75,6 +75,17 @@ class OrderConfirmationViewController: UIViewController {
         return stack
     }()
     
+    var order: FoodOrder
+    
+    init(order: FoodOrder) {
+        self.order = order
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         NSLayoutConstraint.activate([
@@ -100,11 +111,15 @@ class OrderConfirmationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: "caicoBlue")
+        let attr = NSMutableAttributedString(string: "Em até \(order.waitTime) minutos o seu pedido estará pronto para retirada no \(order.restaurant)")
+        attr.addAttributes([.font : UIFont.boldSystemFont(ofSize: 18)], range: NSRange(location: 7, length: 10))
+        attr.addAttributes([.font : UIFont.boldSystemFont(ofSize: 18)], range: NSRange(location:(attr.length - order.restaurant.count), length: order.restaurant.count))
+        detailsLabel.attributedText = attr
         animatedView.play()
     }
     
     
     @objc func confirmOrder() {
-        
+        self.dismiss(animated: true, completion: nil)
     }
 }

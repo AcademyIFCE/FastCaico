@@ -29,11 +29,11 @@
 		DA78DE5820EE8FE8005CC2A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE5620EE8FE8005CC2A0 /* LaunchScreen.storyboard */; };
 		DA78DE6320EE8FE8005CC2A0 /* FastCaicoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE6220EE8FE8005CC2A0 /* FastCaicoTests.swift */; };
 		DA78DE6E20EE8FE8005CC2A0 /* FastCaicoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE6D20EE8FE8005CC2A0 /* FastCaicoUITests.swift */; };
-		DA78DE7D20EE98B1005CC2A0 /* MainDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7C20EE98B1005CC2A0 /* MainDish.swift */; };
 		DA78DE7F20EE98BC005CC2A0 /* Garnish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7E20EE98BC005CC2A0 /* Garnish.swift */; };
 		DA78DE8320F3EE16005CC2A0 /* Garnish.json in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE8120F3EE16005CC2A0 /* Garnish.json */; };
 		DA78DE8420F3EE16005CC2A0 /* MainDish.json in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE8220F3EE16005CC2A0 /* MainDish.json */; };
 		DA78DE8620F3EF38005CC2A0 /* ActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE8520F3EF38005CC2A0 /* ActiveRecord.swift */; };
+		DA7AD3BD20F5409100FE241B /* MainDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7C20EE98B1005CC2A0 /* MainDish.swift */; };
 		DAD07DAA20F534AC001C1ACF /* Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD07DA920F534AC001C1ACF /* Inspectables.swift */; };
 		DAE751423FCBEA8177A114A9 /* Pods_FastCaicoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D395298B28A6E93A128E9817 /* Pods_FastCaicoTests.framework */; };
 		DAFF16B520F4E99D00FBAAB5 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF16B320F4E99D00FBAAB5 /* OrderConfirmationViewController.swift */; };
@@ -550,10 +550,9 @@
 				53B5361720F3D2940073AAD0 /* MeatViewController.swift in Sources */,
 				53B5362420F3EF6E0073AAD0 /* FastCaicoHeaderView.swift in Sources */,
 				537333AB20F4EB0E002B9F0F /* UITableViewCellExtension.swift in Sources */,
-				DA78DE7D20EE98B1005CC2A0 /* MainDish.swift in Sources */,
+				DA7AD3BD20F5409100FE241B /* MainDish.swift in Sources */,
 				537333A820F4E6AD002B9F0F /* ViewProtocols.swift in Sources */,
 				537333AD20F4EB60002B9F0F /* UITableViewExtension.swift in Sources */,
-				DA78DE7D20EE98B1005CC2A0 /* MainDish.swift in Sources */,
 				537333B720F4FC5E002B9F0F /* GarnishTableViewCell.swift in Sources */,
 				53B5361F20F3E1E00073AAD0 /* MeatTableViewCell.swift in Sources */,
 				DA78DE7F20EE98BC005CC2A0 /* Garnish.swift in Sources */,
