@@ -64,6 +64,14 @@ extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
         return headerView
     }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.applyShadowToHeader(tableView)
     }

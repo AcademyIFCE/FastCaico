@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GarnishViewController: UIViewController {
+class GarnishViewController: BaseViewController {
 
     @IBOutlet weak var garnishTableView: UITableView!
     override func viewDidLoad() {
@@ -17,6 +17,7 @@ class GarnishViewController: UIViewController {
         self.garnishTableView.dataSource = self
         
         self.garnishTableView.register(GarnishTableViewCell.self)
+        self.garnishTableView.registerHeader(FastCaicoHeaderView.self)
         
     }
 
@@ -33,6 +34,21 @@ extension GarnishViewController : UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as GarnishTableViewCell
         cell.nameLabel.text = "Baião"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let headerView = tableView.dequeueReusableHeader() as FastCaicoHeaderView
+        headerView.titleLabel.text = "2 Escolha os acompanhamentos:"
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+        return 50
     }
     
 }
