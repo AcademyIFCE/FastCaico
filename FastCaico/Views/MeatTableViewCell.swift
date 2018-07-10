@@ -15,7 +15,7 @@ class MeatTableViewCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    func setup(with dish: Chargeable?) {
+    func setup(with dish: MainDish?) {
         self.meatImageView.image = UIImage(named: dish?.image ?? "")
         self.titleLabel.text = dish?.name
         self.descriptionLabel.text = dish?.description

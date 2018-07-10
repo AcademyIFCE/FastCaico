@@ -20,7 +20,7 @@ class MeatViewController: BaseViewController {
         return table
     }()
     
-    private let dishes = Chargeable.all()
+    private let dishes = MainDish.all()
     
     override func viewDidLoad() {
         super.viewDidLoad()
