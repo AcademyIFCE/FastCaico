@@ -16,7 +16,7 @@ struct MainDish: Codable, ActiveRecord {
     
     init(withName name: String, andPrice price: Float) {
         self.name = name
-        self.image = ""
+        self.image = "picanhaBovina"
         self.price = price
     }
 }

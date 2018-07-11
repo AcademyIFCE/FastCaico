@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GarnishViewController" customModule="FastCaico" customModuleProvider="target">
             <connections>
                 <outlet property="garnishTableView" destination="9Ae-dZ-7nm" id="sZy-9f-grd"/>
+                <outlet property="headerView" destination="pLN-m9-Lnc" id="FTq-N7-7ci"/>
                 <outlet property="orderSummaryView" destination="wIO-zm-Twh" id="7fm-CI-lQD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Ae-dZ-7nm">
-                    <rect key="frame" x="0.0" y="128" width="375" height="459"/>
+                    <rect key="frame" x="0.0" y="100" width="375" height="487"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wIO-zm-Twh" customClass="OrderSummaryView" customModule="FastCaico" customModuleProvider="target">
@@ -34,11 +34,12 @@
                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="160" id="MWO-jo-XdV"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pLN-m9-Lnc">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pLN-m9-Lnc" customClass="GarnishesHeaderView" customModule="FastCaico" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="128" id="ehW-wn-emV"/>
+                        <constraint firstAttribute="height" priority="250" constant="128" id="ZN4-CJ-XVl"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="ehW-wn-emV"/>
                     </constraints>
                 </view>
             </subviews>
