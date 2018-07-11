@@ -13,4 +13,10 @@ struct MainDish: Codable, ActiveRecord {
     var description: String?
     var image: String
     var price: Float
+    
+    init(withName name: String, andPrice price: Float) {
+        self.name = name
+        self.image = "picanhaBovina"
+        self.price = price
+    }
 }

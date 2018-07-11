@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,22 +17,34 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01y-ls-LrI">
-                    <rect key="frame" x="16" y="16" width="343" height="64"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                    <rect key="frame" x="16" y="28.5" width="343" height="33.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                    <color key="textColor" name="caicocBlueOpacity"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSA-SU-tP7">
+                    <rect key="frame" x="16" y="62" width="37" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="21" id="qPI-Yn-Pbe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                     <color key="textColor" name="caicocBlueOpacity"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="01y-ls-LrI" secondAttribute="bottom" constant="16" id="016-1R-w4O"/>
-                <constraint firstItem="01y-ls-LrI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="JiF-sY-sA2"/>
+                <constraint firstItem="01y-ls-LrI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="JiF-sY-sA2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="GSA-SU-tP7" secondAttribute="bottom" constant="16" id="cM8-yT-Uu5"/>
+                <constraint firstItem="GSA-SU-tP7" firstAttribute="leading" secondItem="01y-ls-LrI" secondAttribute="leading" id="oHY-VY-1qn"/>
+                <constraint firstItem="GSA-SU-tP7" firstAttribute="top" secondItem="01y-ls-LrI" secondAttribute="bottom" id="r3J-o4-OtR"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="01y-ls-LrI" secondAttribute="trailing" constant="16" id="xlw-3O-aSA"/>
                 <constraint firstItem="01y-ls-LrI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="xti-US-Mcz"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="subtitleLabel" destination="GSA-SU-tP7" id="Y4N-1v-d90"/>
                 <outlet property="titleLabel" destination="01y-ls-LrI" id="Ljc-Ir-zZR"/>
             </connections>
             <point key="canvasLocation" x="34.5" y="-472"/>
@@ -40,7 +52,7 @@
     </objects>
     <resources>
         <namedColor name="caicocBlueOpacity">
-            <color red="0.20784313725490197" green="0.20392156862745098" blue="0.53333333333333333" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.71764705882352942" green="0.71372549019607845" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
