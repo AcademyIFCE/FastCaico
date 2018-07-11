@@ -10,6 +10,10 @@ import UIKit
 
 class FoodCartViewController: UIViewController {
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     lazy var table: UITableView = {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
@@ -84,5 +88,25 @@ extension FoodCartViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as FoodCartTableViewCell
         cell.setup(with: orders[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteButton = UIContextualAction(style: .normal, title: nil) { (_ , _ , _) in
+            DispatchQueue.main.async { [unowned self] in
+                tableView.performBatchUpdates({
+                    self.orders.remove(at: indexPath.row)
+                    tableView.deleteRows(at: [indexPath], with: .left)
+                }, completion: nil)
+            }
+        }
+        
+        deleteButton.backgroundColor = UIColor(named: "caicoWine")
+        deleteButton.image = UIImage(named: "garbage")
+        
+        return UISwipeActionsConfiguration(actions: [deleteButton])
     }
 }
