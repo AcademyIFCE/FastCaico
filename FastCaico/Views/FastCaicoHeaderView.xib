@@ -34,7 +34,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="01y-ls-LrI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="JiF-sY-sA2"/>
+                <constraint firstItem="01y-ls-LrI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="JiF-sY-sA2"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="GSA-SU-tP7" secondAttribute="bottom" constant="16" id="cM8-yT-Uu5"/>
                 <constraint firstItem="GSA-SU-tP7" firstAttribute="leading" secondItem="01y-ls-LrI" secondAttribute="leading" id="oHY-VY-1qn"/>
                 <constraint firstItem="GSA-SU-tP7" firstAttribute="top" secondItem="01y-ls-LrI" secondAttribute="bottom" id="r3J-o4-OtR"/>
