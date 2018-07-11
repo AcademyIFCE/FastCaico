@@ -76,12 +76,12 @@ extension GarnishViewController : UITableViewDelegate, UITableViewDataSource {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.applyShadowToHeader(garnishTableView)
         self.headerView.isCollapsed = self.shouldCollapseHeader()
+        self.view.layoutIfNeeded()
     }
     
     private func shouldCollapseHeader() -> Bool {
         let cellHeight = self.garnishTableView.visibleCells.first?.frame.height
         let contentOffSet = self.garnishTableView.contentOffset
-        
         return contentOffSet.y > cellHeight! * 2/CGFloat(6)
     }
 

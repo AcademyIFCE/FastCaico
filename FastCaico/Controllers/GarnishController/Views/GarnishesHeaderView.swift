@@ -67,12 +67,41 @@ class GarnishesHeaderView: UIView, NibLoadableView {
     
     private func animateHeader(_ collapse:Bool) {
         
-        let fontSize: CGFloat = collapse ? 18 : 24
-        UIView.animate(withDuration: 0.30) {
-            self.mainDishDescriptionLabel.isHidden = collapse
-            self.mainDishNameLabel.font = UIFont.boldSystemFont(ofSize: fontSize)
-            self.bottomArrowImageView.isHidden = collapse
-        }
+        let fontSize: CGFloat = collapse ? 17 : 24
+        
+        UIView.animateKeyframes(withDuration: 0.3, delay: 0, options: UIView.KeyframeAnimationOptions.calculationModeCubicPaced, animations: {
+            
+            UIView.addKeyframe(withRelativeStartTime: 1/3, relativeDuration: 1, animations: {
+                self.contentView.layer.masksToBounds = collapse
+            })
+            
+            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 1/10, animations: {
+                
+                self.mainDishNameLabel.font = UIFont.boldSystemFont(ofSize: fontSize)
+                
+                if collapse {
+                    self.mainDishNameLabel.setContentCompressionResistancePriority(.required, for: NSLayoutConstraint.Axis.horizontal)
+                } else {
+                    self.mainDishNameLabel.setContentCompressionResistancePriority(.defaultHigh, for: NSLayoutConstraint.Axis.horizontal)
+                }
+            })
+            
+            
+            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 1/2, animations: {
+                self.mainDishDescriptionLabel.alpha = collapse ? 0 : 1
+                self.bottomArrowImageView.alpha = collapse ? 0 : 1
+            })
+            
+            UIView.addKeyframe(withRelativeStartTime: 1/2, relativeDuration: 1, animations: {
+                self.mainDishDescriptionLabel.isHidden = collapse
+                self.bottomArrowImageView.isHidden = collapse
+            })
+            
+        }, completion: { (success) in
+            
+
+        })
+        
 
     }
     
