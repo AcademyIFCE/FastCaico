@@ -50,7 +50,6 @@ extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let dish = dishes?[indexPath.row]
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as MeatTableViewCell
         cell.setup(with: dish)
@@ -58,7 +57,6 @@ extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-
         let headerView = tableView.dequeueReusableHeader() as FastCaicoHeaderView
         headerView.titleLabel.text = "1 Escolha a carne"
         headerView.subtitleLabel.text = nil
@@ -69,6 +67,12 @@ extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
         return UITableView.automaticDimension
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let mainDish = dishes?[indexPath.row] else { return }
+        let controller = GarnishViewController(dish: mainDish)
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         return 50
     }
@@ -76,7 +80,4 @@ extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.applyShadowToHeader(tableView)
     }
-    
-
-
 }

@@ -16,12 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let controller = FoodCartViewController()
+        let controller = MeatViewController()
         let navigation = FastCaicoNavigationController(rootViewController: controller)
-        let order = FoodOrder(dish: MainDish.all()!.first!)
-        FoodCart.shared.foodOrders.append(order)
-        FoodCart.shared.foodOrders.append(order)
-        FoodCart.shared.foodOrders.append(order)
         
         window?.rootViewController = navigation
         window?.makeKeyAndVisible()

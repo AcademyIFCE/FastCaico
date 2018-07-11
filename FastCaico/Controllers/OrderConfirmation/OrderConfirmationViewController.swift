@@ -116,10 +116,15 @@ class OrderConfirmationViewController: UIViewController {
         attr.addAttributes([.font : UIFont.boldSystemFont(ofSize: 18)], range: NSRange(location:(attr.length - order.restaurant.count), length: order.restaurant.count))
         detailsLabel.attributedText = attr
         animatedView.play()
+        
+        navigationItem.setHidesBackButton(true, animated: false)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = false
     }
     
     
     @objc func confirmOrder() {
-        self.dismiss(animated: true, completion: nil)
+        FoodCart.shared.foodOrders.removeAll()
+        self.navigationController?.dismiss(animated: true, completion: nil)
     }
 }

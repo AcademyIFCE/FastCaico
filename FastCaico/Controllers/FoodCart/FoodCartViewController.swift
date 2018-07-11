@@ -9,7 +9,7 @@
 import UIKit
 
 class FoodCartViewController: UIViewController {
-
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -26,8 +26,8 @@ class FoodCartViewController: UIViewController {
         return table
     }()
     
-    lazy var orderConfirmationView: UIView = {
-        let view = UIView()
+    lazy var orderConfirmationView: OrderSummaryView = {
+        let view = OrderSummaryView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .black
         self.view.addSubview(view)
@@ -40,7 +40,12 @@ class FoodCartViewController: UIViewController {
         return button
     }()
     
-    var orders = FoodCart.shared.foodOrders
+    private var totalAmount: String {
+        get {
+            let totalPrice = FoodCart.shared.foodOrders.reduce(0, { $0 + $1.dish.price})
+            return String(format: "R$ %.2f", totalPrice).replacingOccurrences(of: ".", with: ",")
+        }
+    }
     
     override func viewDidLayoutSubviews() {
         NSLayoutConstraint.activate([
@@ -50,7 +55,7 @@ class FoodCartViewController: UIViewController {
             NSLayoutConstraint(item: table, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: 0),
             NSLayoutConstraint(item: table, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1, constant: 0),
             //OrderConfirmationView Constraints
-            NSLayoutConstraint(item: orderConfirmationView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 80),
+            NSLayoutConstraint(item: orderConfirmationView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 100),
             NSLayoutConstraint(item: orderConfirmationView, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottom, multiplier: 1, constant: 0),
             NSLayoutConstraint(item: orderConfirmationView, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: 0),
             NSLayoutConstraint(item: orderConfirmationView, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1, constant: 0)
@@ -62,14 +67,18 @@ class FoodCartViewController: UIViewController {
         //Navigation Style
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         navigationController?.navigationBar.barTintColor = UIColor(named: "caicoBlue")
+        navigationController?.navigationBar.isTranslucent = false
         
         navigationItem.rightBarButtonItem = closeBarButton
         title = "Carrinho"
+        
+        self.view.sendSubviewToBack(table)
+        orderConfirmationView.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        orders = FoodCart.shared.foodOrders
+        orderConfirmationView.refresh()
         table.reloadData()
     }
     
@@ -81,12 +90,12 @@ class FoodCartViewController: UIViewController {
 
 extension FoodCartViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return orders.count
+        return FoodCart.shared.foodOrders.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as FoodCartTableViewCell
-        cell.setup(with: orders[indexPath.row])
+        cell.setup(with: FoodCart.shared.foodOrders[indexPath.row])
         return cell
     }
     
@@ -98,8 +107,9 @@ extension FoodCartViewController: UITableViewDelegate, UITableViewDataSource {
         let deleteButton = UIContextualAction(style: .normal, title: nil) { (_ , _ , _) in
             DispatchQueue.main.async { [unowned self] in
                 tableView.performBatchUpdates({
-                    self.orders.remove(at: indexPath.row)
+                    FoodCart.shared.foodOrders.remove(at: indexPath.row)
                     tableView.deleteRows(at: [indexPath], with: .left)
+                    self.orderConfirmationView.refresh()
                 }, completion: nil)
             }
         }
@@ -108,5 +118,28 @@ extension FoodCartViewController: UITableViewDelegate, UITableViewDataSource {
         deleteButton.image = UIImage(named: "garbage")
         
         return UISwipeActionsConfiguration(actions: [deleteButton])
+    }
+}
+
+extension FoodCartViewController: OrderSummaryViewDelegate {
+    func orderSumaryView(_ orderView: OrderSummaryView, didTouchActionView view: UIView) {
+        guard let order = FoodCart.shared.foodOrders.first else { return }
+        self.navigationController?.pushViewController(OrderConfirmationViewController(order: order), animated: true)
+    }
+    
+    func subtitleForActionView() -> String? {
+        return nil
+    }
+    
+    func titleForActionView() -> String? {
+        return "Pedir"
+    }
+    
+    func titleForOrderSummaryView() -> String? {
+        return "Total do pedido"
+    }
+    
+    func titleForDescriptionLabel() -> String? {
+        return totalAmount
     }
 }

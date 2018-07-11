@@ -13,16 +13,22 @@ class GarnishViewController: BaseViewController {
     @IBOutlet weak var garnishTableView: UITableView!
     @IBOutlet weak var orderSummaryView: OrderSummaryView!
     @IBOutlet weak var headerView: GarnishesHeaderView!
-    
-    
+
     var mainDish: MainDish!
     @objc dynamic var foodOrder: FoodOrder!
-    
     let garnishes = Garnish.all()
+    
+    init(dish: MainDish) {
+        self.mainDish = dish
+        super.init(nibName: "GarnishViewController", bundle: Bundle.main)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.mainDish = MainDish(withName: "Picanha Bovina", andPrice: 19.50)
-        self.mainDish.description = "200g de picanha bovina assada na brasa"
         self.foodOrder = FoodOrder(dish: mainDish)
         self.headerView.setup(with: mainDish)
         self.garnishTableView.delegate = self
@@ -89,7 +95,8 @@ extension GarnishViewController : OrderSummaryViewDelegate {
     
     
     func orderSumaryView(_ orderView: OrderSummaryView, didTouchActionView view: UIView) {
-        
+        FoodCart.shared.foodOrders.append(self.foodOrder)
+        self.navigationController?.popViewController(animated: true)
     }
     
     func subtitleForActionView() -> String? {

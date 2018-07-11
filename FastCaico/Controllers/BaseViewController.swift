@@ -9,6 +9,9 @@
 import UIKit
 
 class BaseViewController: UIViewController {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +19,21 @@ class BaseViewController: UIViewController {
     }
     
     private func loadNavigationItem() {
-        self.title = "Lauch Box"
+        self.title = "Launch Box"
         
         let image = UIImage(named: "car")
         let rightBarButtonItem = UIBarButtonItem(image: image!, style: .plain, target: self, action: #selector(loadShoppingCart))
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        self.navigationItem.setHidesBackButton(true, animated: false)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.setNeedsStatusBarAppearanceUpdate()
     }
     
     @objc private func loadShoppingCart() {
-        
+        let navigation = UINavigationController(rootViewController: FoodCartViewController())
+        self.present(navigation, animated: true, completion: nil)
     }
     
     private func verifyShadowNeed(_ tableView: UITableView) -> Bool {
