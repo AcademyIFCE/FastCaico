@@ -14,9 +14,8 @@ import Foundation
     var restaurant: String
     var waitTime: Int
     
-    init(dish: MainDish, garnishes: [Garnish]) {
+    init(dish: MainDish) {
         self.dish = dish
-        self.garnishes = garnishes
         self.restaurant = "Caicó Benfica"
         self.waitTime = 10
     }

@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         let controller = FoodCartViewController()
         let navigation = FastCaicoNavigationController(rootViewController: controller)
-        let order = FoodOrder(dish: MainDish.all()!.first!, garnishes: [Garnish.all()!.first!])
+        let order = FoodOrder(dish: MainDish.all()!.first!)
         FoodCart.shared.foodOrders.append(order)
         FoodCart.shared.foodOrders.append(order)
         FoodCart.shared.foodOrders.append(order)

@@ -23,7 +23,7 @@ class GarnishViewController: BaseViewController {
         super.viewDidLoad()
         self.mainDish = MainDish(withName: "Picanha Bovina", andPrice: 19.50)
         self.mainDish.description = "200g de picanha bovina assada na brasa"
-        self.foodOrder = FoodOrder(with: mainDish)
+        self.foodOrder = FoodOrder(dish: mainDish)
         self.headerView.setup(with: mainDish)
         self.garnishTableView.delegate = self
         self.garnishTableView.dataSource = self
