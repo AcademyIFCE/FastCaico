@@ -9,7 +9,10 @@
 import UIKit
 
 protocol OrderSummaryViewDelegate: class {
-    func doSomething()
+    func orderSumaryView(_ orderView: OrderSummaryView, didTouchActionView view : UIView)
+    func subtitleForActionView() -> String?
+    func titleForActionView() -> String?
+    func titleForOrderSummaryView() -> String?
 }
 
 class OrderSummaryView: UIView, NibLoadableView {
@@ -19,8 +22,30 @@ class OrderSummaryView: UIView, NibLoadableView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var addView: UIView!
+    @IBOutlet weak var titleAddViewLabel: UILabel!
     
-    weak var delegate: OrderSummaryViewDelegate?
+    private var observer: NSKeyValueObservation?
+    
+    weak var delegate: OrderSummaryViewDelegate? {
+        didSet {
+            self.titleAddViewLabel.text = delegate?.titleForActionView()
+            self.priceLabel.text = delegate?.subtitleForActionView()
+            self.titleLabel.text = self.delegate?.titleForOrderSummaryView()
+        }
+    }
+    
+    weak var foodOrder: FoodOrder? {
+        didSet {
+            
+            observer = foodOrder?.observe(\.garnishes, options: .new, changeHandler: { [weak self] (foodOrder, value) in
+                self?.descriptionLabel.text = self?.formatGarnishDescription(for: value.newValue)
+            })
+        }
+    }
+    
+    override func awakeFromNib() {
+        addView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(addToOrder)))
+    }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -37,13 +62,20 @@ class OrderSummaryView: UIView, NibLoadableView {
         contentView.frame = self.bounds
         self.addSubview(contentView)
     }
-    
-    override func awakeFromNib() {
-        addView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(addToOrder)))
+
+    @objc private func addToOrder() {
+        delegate?.orderSumaryView(self, didTouchActionView: addView)
     }
     
-    @objc func addToOrder() {
-        print("deu bom vetim")
-        delegate?.doSomething()
+    private func formatGarnishDescription(for garnishes: [String:Int]?) -> String? {
+        guard let garnishes = garnishes else {
+            return nil
+        }
+        
+        let garnishesArray = garnishes.map { (garnish) in
+            return "\(garnish.value) \(garnish.key)"
+        }
+        
+        return garnishesArray.joined(separator: ", ")
     }
 }

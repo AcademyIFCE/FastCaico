@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,6 +16,7 @@
                 <outlet property="addView" destination="lc9-jS-1dQ" id="zuc-3B-WBh"/>
                 <outlet property="descriptionLabel" destination="aCk-9o-WnC" id="qhx-BI-D9K"/>
                 <outlet property="priceLabel" destination="Qjk-Al-XMd" id="0vA-JI-5Ec"/>
+                <outlet property="titleAddViewLabel" destination="dzh-ih-rGi" id="5gk-AG-qyL"/>
                 <outlet property="titleLabel" destination="xDt-r1-q1O" id="SwJ-EU-7hv"/>
             </connections>
         </placeholder>
@@ -24,7 +26,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDt-r1-q1O">
-                    <rect key="frame" x="16" y="8" width="47.5" height="21.5"/>
+                    <rect key="frame" x="16" y="8" width="47" height="21.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                     <color key="textColor" name="caicoBlue"/>
                     <nil key="highlightedColor"/>
@@ -76,6 +78,7 @@
                 <constraint firstItem="xDt-r1-q1O" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="6Be-3T-FRg"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lc9-jS-1dQ" secondAttribute="trailing" constant="16" id="Frd-tM-AQS"/>
                 <constraint firstItem="aCk-9o-WnC" firstAttribute="leading" secondItem="xDt-r1-q1O" secondAttribute="leading" id="WsE-Yf-Ubc"/>
+                <constraint firstItem="lc9-jS-1dQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="cdo-7a-ori"/>
                 <constraint firstItem="lc9-jS-1dQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aCk-9o-WnC" secondAttribute="trailing" constant="16" id="e6s-jz-Fgs"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="aCk-9o-WnC" secondAttribute="bottom" constant="8" id="eMm-g3-cNc"/>
                 <constraint firstItem="lc9-jS-1dQ" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="qVK-Wl-U1x"/>
