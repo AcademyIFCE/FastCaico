@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FoodCartTableViewCell" customModule="FastCaico" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QfV-6X-eHy">
+                    <rect key="frame" x="16" y="16" width="70" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="a8x-Yf-Qei"/>
+                        <constraint firstAttribute="width" constant="70" id="qGQ-bJ-DBG"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkK-tQ-306">
+                    <rect key="frame" x="94" y="16" width="43" height="20"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" name="caicoBlue"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUD-VX-f9o">
+                    <rect key="frame" x="94" y="44" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" name="caicocBlueOpacity"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVS-Xc-wgq">
+                    <rect key="frame" x="311" y="16" width="48" height="22"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" name="caicoBlue"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cVS-Xc-wgq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zUD-VX-f9o" secondAttribute="trailing" constant="24" id="9Ae-wg-r4W"/>
+                <constraint firstItem="zUD-VX-f9o" firstAttribute="top" secondItem="WkK-tQ-306" secondAttribute="bottom" constant="8" id="9xc-P3-ZCh"/>
+                <constraint firstItem="WkK-tQ-306" firstAttribute="top" secondItem="QfV-6X-eHy" secondAttribute="top" id="B3E-af-Jck"/>
+                <constraint firstItem="QfV-6X-eHy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="Ejj-Wl-lVP"/>
+                <constraint firstItem="WkK-tQ-306" firstAttribute="leading" secondItem="QfV-6X-eHy" secondAttribute="trailing" constant="8" id="FqD-WP-I00"/>
+                <constraint firstItem="cVS-Xc-wgq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WkK-tQ-306" secondAttribute="trailing" constant="24" id="gCQ-nN-jPO"/>
+                <constraint firstItem="QfV-6X-eHy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="nlO-mq-UK1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zUD-VX-f9o" secondAttribute="bottom" constant="8" id="omX-kG-77M"/>
+                <constraint firstItem="zUD-VX-f9o" firstAttribute="leading" secondItem="WkK-tQ-306" secondAttribute="leading" id="w9m-Ul-aCW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cVS-Xc-wgq" secondAttribute="trailing" constant="16" id="wkN-MG-7Xm"/>
+                <constraint firstItem="cVS-Xc-wgq" firstAttribute="top" secondItem="QfV-6X-eHy" secondAttribute="top" id="xRd-RQ-ubO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="foodImageView" destination="QfV-6X-eHy" id="35c-bO-O9Q"/>
+                <outlet property="foodPriceLabel" destination="cVS-Xc-wgq" id="gk5-QH-k3H"/>
+                <outlet property="garnishesLabel" destination="zUD-VX-f9o" id="Xy8-fq-EF9"/>
+                <outlet property="mainDishNameLabel" destination="WkK-tQ-306" id="WV0-BA-Itf"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-230"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="caicoBlue">
+            <color red="0.20784313725490197" green="0.20392156862745098" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="caicocBlueOpacity">
+            <color red="0.20784313725490197" green="0.20392156862745098" blue="0.53333333333333333" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

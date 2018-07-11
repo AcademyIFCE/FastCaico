@@ -14,11 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let controller = MeatViewController()
+        let controller = FoodCartViewController()
         let navigation = FastCaicoNavigationController(rootViewController: controller)
+        let order = FoodOrder(dish: MainDish.all()!.first!, garnishes: [Garnish.all()!.first!])
+        FoodCart.shared.foodOrders.append(order)
+        FoodCart.shared.foodOrders.append(order)
+        FoodCart.shared.foodOrders.append(order)
+        
         window?.rootViewController = navigation
         window?.makeKeyAndVisible()
         return true
