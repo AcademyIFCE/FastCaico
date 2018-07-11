@@ -76,6 +76,6 @@ class OrderSummaryView: UIView, NibLoadableView {
             return "\(garnish.value) \(garnish.key)"
         }
         
-        return garnishesArray.joined(separator: ", ")
+        return garnishesArray.reversed().joined(separator: ", ")
     }
 }
