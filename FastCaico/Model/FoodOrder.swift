@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct FoodOrder {
+@objcMembers class FoodOrder: NSObject {
     var dish: MainDish
-    var garnishes: [Garnish]
+    dynamic var garnishes: [String:Int] = [:]
     var restaurant: String
     var waitTime: Int
     

@@ -26,6 +26,19 @@ class BaseViewController: UIViewController {
     @objc private func loadShoppingCart() {
         
     }
+    
+    private func verifyShadowNeed(_ tableView: UITableView) -> Bool {
+        let cellHeight = tableView.visibleCells.first?.frame.height
+        let contentOffSet = tableView.contentOffset
+        
+        return contentOffSet.y > cellHeight!/CGFloat(6)
+    }
+    
+    public func applyShadowToHeader(_ tableView: UITableView) {
+        if let header = tableView.headerView(forSection: 0) as? FastCaicoHeaderView {
+            header.mustShowShadow = verifyShadowNeed(tableView)
+        }
+    }
 
 
 }

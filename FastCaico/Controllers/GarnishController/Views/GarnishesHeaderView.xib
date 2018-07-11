@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GarnishesHeaderView" customModule="FastCaico" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomArrowImageView" destination="N6Y-70-lhh" id="R8f-Xp-5me"/>
+                <outlet property="mainDishDescriptionLabel" destination="hWk-4Y-fKh" id="2nC-zK-sPp"/>
+                <outlet property="mainDishImageView" destination="nOv-XD-NfE" id="bVR-Uk-gw1"/>
+                <outlet property="mainDishNameLabel" destination="3qY-Px-S6W" id="gRp-TH-xDv"/>
+                <outlet property="mainDishPriceLabel" destination="l4d-Aq-ITi" id="mKR-Xq-jdG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4Hd-qm-PCb">
+                    <rect key="frame" x="16" y="0.0" width="384" height="92"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6q-DW-xTT">
+                            <rect key="frame" x="0.0" y="0.0" width="384" height="67"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picanhaBovina" translatesAutoresizingMaskIntoConstraints="NO" id="nOv-XD-NfE">
+                                    <rect key="frame" x="0.0" y="0.0" width="112" height="67"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="112" id="OAQ-o1-UfW"/>
+                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="117" id="bDB-ex-CLL"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Picanha bovina" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qY-Px-S6W">
+                                    <rect key="frame" x="112" y="0.0" width="145.5" height="67"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                    <color key="textColor" name="caicoBlue"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FHw-IB-ON0">
+                                    <rect key="frame" x="257.5" y="0.0" width="126.5" height="67"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="R$ 16,00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4d-Aq-ITi">
+                                            <rect key="frame" x="53.5" y="0.0" width="73" height="39"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" name="caicoBlue"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200g de picanha bovina assada na brasa" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWk-4Y-fKh">
+                                            <rect key="frame" x="25.5" y="28" width="101" height="39"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" name="caicoBlue"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="FHw-IB-ON0" firstAttribute="width" relation="lessThanOrEqual" secondItem="u6q-DW-xTT" secondAttribute="width" multiplier="0.33" id="36O-Wd-aLF"/>
+                            </constraints>
+                        </stackView>
+                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picanhaBovina" translatesAutoresizingMaskIntoConstraints="NO" id="N6Y-70-lhh">
+                            <rect key="frame" x="0.0" y="67" width="384" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="1GP-7c-vlt"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4Hd-qm-PCb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="4Qc-X1-19F"/>
+                <constraint firstItem="4Hd-qm-PCb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="R3j-b2-GUO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4Hd-qm-PCb" secondAttribute="trailing" constant="16" id="VaY-TY-oQ7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4Hd-qm-PCb" secondAttribute="bottom" constant="8" id="bd5-CL-WPJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-74" y="-220"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="picanhaBovina" width="204" height="112"/>
+        <namedColor name="caicoBlue">
+            <color red="0.20784313725490197" green="0.20392156862745098" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
