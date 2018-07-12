@@ -136,6 +136,7 @@
 		53B5362120F3EF5D0073AAD0 /* FastCaicoHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FastCaicoHeaderView.xib; sourceTree = "<group>"; };
 		53B5362320F3EF6E0073AAD0 /* FastCaicoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCaicoHeaderView.swift; sourceTree = "<group>"; };
 		53B5362520F3F25F0073AAD0 /* FastCaicoNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCaicoNavigationController.swift; sourceTree = "<group>"; };
+		53F1453220F7F572000DCF43 /* FastCaico.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FastCaico.entitlements; sourceTree = "<group>"; };
 		721AA6F2DDFE679D1BA5DB9C /* Pods-FastCaicoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCaicoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastCaicoTests/Pods-FastCaicoTests.release.xcconfig"; sourceTree = "<group>"; };
 		9894E94EE84746056A7AF725 /* Pods-FastCaico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCaico.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastCaico/Pods-FastCaico.release.xcconfig"; sourceTree = "<group>"; };
 		AF4742B65E26EA7673AAF880 /* Pods_FastCaico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastCaico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -368,6 +369,7 @@
 		DA78DE4920EE8FE6005CC2A0 /* FastCaico */ = {
 			isa = PBXGroup;
 			children = (
+				53F1453220F7F572000DCF43 /* FastCaico.entitlements */,
 				DA7E6B3720F793C6002BD535 /* Intents */,
 				DA7AD3C920F6BC4D00FE241B /* Utils */,
 				DAFF16BF20F4F74500FBAAB5 /* Resources */,
@@ -604,6 +606,11 @@
 				TargetAttributes = {
 					DA78DE4620EE8FE6005CC2A0 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					DA78DE5D20EE8FE8005CC2A0 = {
 						CreatedOnToolsVersion = 10.0;
@@ -1011,6 +1018,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FastCaico/FastCaico.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45BX7W7QF5;
 				INFOPLIST_FILE = FastCaico/Info.plist;
@@ -1019,7 +1027,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaico;
+				PRODUCT_BUNDLE_IDENTIFIER = academy.ifce.FastCaico;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1032,6 +1040,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FastCaico/FastCaico.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45BX7W7QF5;
 				INFOPLIST_FILE = FastCaico/Info.plist;
@@ -1040,7 +1049,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaico;
+				PRODUCT_BUNDLE_IDENTIFIER = academy.ifce.FastCaico;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1054,7 +1063,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 489VWS49NR;
+				DEVELOPMENT_TEAM = 45BX7W7QF5;
 				INFOPLIST_FILE = FastCaicoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1076,7 +1085,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 489VWS49NR;
+				DEVELOPMENT_TEAM = 45BX7W7QF5;
 				INFOPLIST_FILE = FastCaicoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1097,7 +1106,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 489VWS49NR;
+				DEVELOPMENT_TEAM = 45BX7W7QF5;
 				INFOPLIST_FILE = FastCaicoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1118,7 +1127,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 489VWS49NR;
+				DEVELOPMENT_TEAM = 45BX7W7QF5;
 				INFOPLIST_FILE = FastCaicoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1144,7 +1153,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaico.FastCaicoIntentExtensionUI;
+				PRODUCT_BUNDLE_IDENTIFIER = academy.ifce.FastCaico.FastCaicoIntentExtensionUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -1163,7 +1172,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaico.FastCaicoIntentExtensionUI;
+				PRODUCT_BUNDLE_IDENTIFIER = academy.ifce.FastCaico.FastCaicoIntentExtensionUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -1182,7 +1191,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaico.FastCaicoIntentExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = academy.ifce.FastCaico.FastCaicoIntentExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -1201,7 +1210,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaico.FastCaicoIntentExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = academy.ifce.FastCaico.FastCaicoIntentExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
