@@ -54,6 +54,7 @@ extension GarnishViewController : UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as GarnishTableViewCell
         cell.delegate = self
         cell.setup(with: garnish, andFoodOrder: foodOrder)
+        
         return cell
     }
     

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		531BD68420F6776700A9A6C8 /* GarnishesHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 531BD68320F6776700A9A6C8 /* GarnishesHeaderView.xib */; };
 		531BD68620F6778F00A9A6C8 /* GarnishesHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531BD68520F6778F00A9A6C8 /* GarnishesHeaderView.swift */; };
+		531BD68A20F6BFBF00A9A6C8 /* MeatViewControllerAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531BD68920F6BFBF00A9A6C8 /* MeatViewControllerAnimatedTransitioning.swift */; };
 		537333A820F4E6AD002B9F0F /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537333A720F4E6AD002B9F0F /* ViewProtocols.swift */; };
 		537333AB20F4EB0E002B9F0F /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537333AA20F4EB0E002B9F0F /* UITableViewCellExtension.swift */; };
 		537333AD20F4EB60002B9F0F /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537333AC20F4EB60002B9F0F /* UITableViewExtension.swift */; };
@@ -76,6 +77,7 @@
 		4BE6E3FBD61A40A1B017B5DF /* Pods-FastCaico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCaico.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastCaico/Pods-FastCaico.debug.xcconfig"; sourceTree = "<group>"; };
 		531BD68320F6776700A9A6C8 /* GarnishesHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GarnishesHeaderView.xib; sourceTree = "<group>"; };
 		531BD68520F6778F00A9A6C8 /* GarnishesHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarnishesHeaderView.swift; sourceTree = "<group>"; };
+		531BD68920F6BFBF00A9A6C8 /* MeatViewControllerAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatViewControllerAnimatedTransitioning.swift; sourceTree = "<group>"; };
 		537333A720F4E6AD002B9F0F /* ViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
 		537333AA20F4EB0E002B9F0F /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 		537333AC20F4EB60002B9F0F /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
@@ -161,6 +163,22 @@
 				531BD68520F6778F00A9A6C8 /* GarnishesHeaderView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		531BD68720F6BF8900A9A6C8 /* Transitons */ = {
+			isa = PBXGroup;
+			children = (
+				531BD68820F6BF9300A9A6C8 /* MeatController */,
+			);
+			path = Transitons;
+			sourceTree = "<group>";
+		};
+		531BD68820F6BF9300A9A6C8 /* MeatController */ = {
+			isa = PBXGroup;
+			children = (
+				531BD68920F6BFBF00A9A6C8 /* MeatViewControllerAnimatedTransitioning.swift */,
+			);
+			path = MeatController;
 			sourceTree = "<group>";
 		};
 		537333A620F4E69C002B9F0F /* Protocols */ = {
@@ -293,6 +311,7 @@
 		DA78DE4920EE8FE6005CC2A0 /* FastCaico */ = {
 			isa = PBXGroup;
 			children = (
+				531BD68720F6BF8900A9A6C8 /* Transitons */,
 				DAFF16BF20F4F74500FBAAB5 /* Resources */,
 				537333A920F4EAEA002B9F0F /* Extensions */,
 				537333A620F4E69C002B9F0F /* Protocols */,
@@ -621,6 +640,7 @@
 				DA78DE7F20EE98BC005CC2A0 /* Garnish.swift in Sources */,
 				53B5362620F3F25F0073AAD0 /* FastCaicoNavigationController.swift in Sources */,
 				DA78DE5320EE8FE6005CC2A0 /* FastCaico.xcdatamodeld in Sources */,
+				531BD68A20F6BFBF00A9A6C8 /* MeatViewControllerAnimatedTransitioning.swift in Sources */,
 				537333B220F4F8EF002B9F0F /* GarnishViewController.swift in Sources */,
 				DA78DE4B20EE8FE6005CC2A0 /* AppDelegate.swift in Sources */,
 				539FB73520F5417E00A76CF8 /* FoodOrder.swift in Sources */,
