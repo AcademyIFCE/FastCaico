@@ -47,6 +47,20 @@
 		DA7AD3C620F6449D00FE241B /* FoodCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD3C520F6449D00FE241B /* FoodCart.swift */; };
 		DA7AD3C820F69CED00FE241B /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD3C720F69CED00FE241B /* UINavigationControllerExtension.swift */; };
 		DA7AD3CB20F6BC5E00FE241B /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD3CA20F6BC5E00FE241B /* NotificationHandler.swift */; };
+		DA7E6B0A20F79091002BD535 /* FastCaicoIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B0920F79091002BD535 /* FastCaicoIntents.intentdefinition */; };
+		DA7E6B1220F790B0002BD535 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B1120F790B0002BD535 /* IntentHandler.swift */; };
+		DA7E6B1A20F790B0002BD535 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7E6B1920F790B0002BD535 /* IntentsUI.framework */; };
+		DA7E6B1D20F790B0002BD535 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B1C20F790B0002BD535 /* IntentViewController.swift */; };
+		DA7E6B2020F790B0002BD535 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7E6B1E20F790B0002BD535 /* MainInterface.storyboard */; };
+		DA7E6B2420F790B0002BD535 /* FastCaicoIntentExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA7E6B1820F790B0002BD535 /* FastCaicoIntentExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA7E6B2720F790B0002BD535 /* FastCaicoIntentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA7E6B0F20F790B0002BD535 /* FastCaicoIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA7E6B2F20F790BB002BD535 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B1120F790B0002BD535 /* IntentHandler.swift */; };
+		DA7E6B3120F790BC002BD535 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B1120F790B0002BD535 /* IntentHandler.swift */; };
+		DA7E6B3320F790CC002BD535 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B1C20F790B0002BD535 /* IntentViewController.swift */; };
+		DA7E6B3420F790CD002BD535 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B1C20F790B0002BD535 /* IntentViewController.swift */; };
+		DA7E6B3920F794F9002BD535 /* IntentsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B3820F794F9002BD535 /* IntentsManager.swift */; };
+		DA7E6B3C20F7AAB3002BD535 /* FastCaicoIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B0920F79091002BD535 /* FastCaicoIntents.intentdefinition */; };
+		DA7E6B3D20F7AAB4002BD535 /* FastCaicoIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B0920F79091002BD535 /* FastCaicoIntents.intentdefinition */; };
 		DAD07DAA20F534AC001C1ACF /* Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD07DA920F534AC001C1ACF /* Inspectables.swift */; };
 		DAE751423FCBEA8177A114A9 /* Pods_FastCaicoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D395298B28A6E93A128E9817 /* Pods_FastCaicoTests.framework */; };
 		DAFF16B520F4E99D00FBAAB5 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF16B320F4E99D00FBAAB5 /* OrderConfirmationViewController.swift */; };
@@ -68,7 +82,36 @@
 			remoteGlobalIDString = DA78DE4620EE8FE6005CC2A0;
 			remoteInfo = FastCaico;
 		};
+		DA7E6B2220F790B0002BD535 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA78DE3F20EE8FE6005CC2A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA7E6B1720F790B0002BD535;
+			remoteInfo = FastCaicoIntentExtensionUI;
+		};
+		DA7E6B2520F790B0002BD535 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA78DE3F20EE8FE6005CC2A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA7E6B0E20F790B0002BD535;
+			remoteInfo = FastCaicoIntentExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA7E6B2E20F790B0002BD535 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DA7E6B2720F790B0002BD535 /* FastCaicoIntentExtension.appex in Embed App Extensions */,
+				DA7E6B2420F790B0002BD535 /* FastCaicoIntentExtensionUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		09042F958F23251438F5E3DD /* Pods-FastCaicoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCaicoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastCaicoUITests/Pods-FastCaicoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +164,16 @@
 		DA7AD3C520F6449D00FE241B /* FoodCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCart.swift; sourceTree = "<group>"; };
 		DA7AD3C720F69CED00FE241B /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
 		DA7AD3CA20F6BC5E00FE241B /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		DA7E6B0920F79091002BD535 /* FastCaicoIntents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = FastCaicoIntents.intentdefinition; sourceTree = "<group>"; };
+		DA7E6B0F20F790B0002BD535 /* FastCaicoIntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FastCaicoIntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7E6B1120F790B0002BD535 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		DA7E6B1320F790B0002BD535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7E6B1820F790B0002BD535 /* FastCaicoIntentExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FastCaicoIntentExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7E6B1920F790B0002BD535 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		DA7E6B1C20F790B0002BD535 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		DA7E6B1F20F790B0002BD535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		DA7E6B2120F790B0002BD535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7E6B3820F794F9002BD535 /* IntentsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentsManager.swift; sourceTree = "<group>"; };
 		DAD07DA920F534AC001C1ACF /* Inspectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inspectables.swift; sourceTree = "<group>"; };
 		DAFF16B320F4E99D00FBAAB5 /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 		DAFF16BD20F4ED7500FBAAB5 /* Inspectables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspectables.swift; sourceTree = "<group>"; };
@@ -150,6 +203,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				79796A75EEB70EE4EE99A36F /* Pods_FastCaicoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7E6B0C20F790B0002BD535 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7E6B1520F790B0002BD535 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7E6B1A20F790B0002BD535 /* IntentsUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +333,7 @@
 				AF4742B65E26EA7673AAF880 /* Pods_FastCaico.framework */,
 				D395298B28A6E93A128E9817 /* Pods_FastCaicoTests.framework */,
 				3EDC95CD47C0D182BFA5ACAC /* Pods_FastCaicoUITests.framework */,
+				DA7E6B1920F790B0002BD535 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -275,6 +344,8 @@
 				DA78DE4920EE8FE6005CC2A0 /* FastCaico */,
 				DA78DE6120EE8FE8005CC2A0 /* FastCaicoTests */,
 				DA78DE6C20EE8FE8005CC2A0 /* FastCaicoUITests */,
+				DA7E6B1020F790B0002BD535 /* FastCaicoIntentExtension */,
+				DA7E6B1B20F790B0002BD535 /* FastCaicoIntentExtensionUI */,
 				DA78DE4820EE8FE6005CC2A0 /* Products */,
 				DAD07DA820F5346E001C1ACF /* Recovered References */,
 				924540EFEEDD064B24649C2A /* Pods */,
@@ -288,6 +359,8 @@
 				DA78DE4720EE8FE6005CC2A0 /* FastCaico.app */,
 				DA78DE5E20EE8FE8005CC2A0 /* FastCaicoTests.xctest */,
 				DA78DE6920EE8FE8005CC2A0 /* FastCaicoUITests.xctest */,
+				DA7E6B0F20F790B0002BD535 /* FastCaicoIntentExtension.appex */,
+				DA7E6B1820F790B0002BD535 /* FastCaicoIntentExtensionUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -295,6 +368,7 @@
 		DA78DE4920EE8FE6005CC2A0 /* FastCaico */ = {
 			isa = PBXGroup;
 			children = (
+				DA7E6B3720F793C6002BD535 /* Intents */,
 				DA7AD3C920F6BC4D00FE241B /* Utils */,
 				DAFF16BF20F4F74500FBAAB5 /* Resources */,
 				537333A920F4EAEA002B9F0F /* Extensions */,
@@ -369,6 +443,34 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		DA7E6B1020F790B0002BD535 /* FastCaicoIntentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DA7E6B1120F790B0002BD535 /* IntentHandler.swift */,
+				DA7E6B1320F790B0002BD535 /* Info.plist */,
+			);
+			path = FastCaicoIntentExtension;
+			sourceTree = "<group>";
+		};
+		DA7E6B1B20F790B0002BD535 /* FastCaicoIntentExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				DA7E6B1C20F790B0002BD535 /* IntentViewController.swift */,
+				DA7E6B1E20F790B0002BD535 /* MainInterface.storyboard */,
+				DA7E6B2120F790B0002BD535 /* Info.plist */,
+			);
+			path = FastCaicoIntentExtensionUI;
+			sourceTree = "<group>";
+		};
+		DA7E6B3720F793C6002BD535 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				DA7E6B0920F79091002BD535 /* FastCaicoIntents.intentdefinition */,
+				DA7E6B3820F794F9002BD535 /* IntentsManager.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
 		DAD07DA820F5346E001C1ACF /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,10 +507,13 @@
 				DA78DE4420EE8FE6005CC2A0 /* Frameworks */,
 				DA78DE4520EE8FE6005CC2A0 /* Resources */,
 				0E4DECC7A3DC4B956280F4BE /* [CP] Embed Pods Frameworks */,
+				DA7E6B2E20F790B0002BD535 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DA7E6B2320F790B0002BD535 /* PBXTargetDependency */,
+				DA7E6B2620F790B0002BD535 /* PBXTargetDependency */,
 			);
 			name = FastCaico;
 			productName = FastCaico;
@@ -453,6 +558,40 @@
 			productReference = DA78DE6920EE8FE8005CC2A0 /* FastCaicoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DA7E6B0E20F790B0002BD535 /* FastCaicoIntentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7E6B2B20F790B0002BD535 /* Build configuration list for PBXNativeTarget "FastCaicoIntentExtension" */;
+			buildPhases = (
+				DA7E6B0B20F790B0002BD535 /* Sources */,
+				DA7E6B0C20F790B0002BD535 /* Frameworks */,
+				DA7E6B0D20F790B0002BD535 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastCaicoIntentExtension;
+			productName = FastCaicoIntentExtension;
+			productReference = DA7E6B0F20F790B0002BD535 /* FastCaicoIntentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DA7E6B1720F790B0002BD535 /* FastCaicoIntentExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7E6B2820F790B0002BD535 /* Build configuration list for PBXNativeTarget "FastCaicoIntentExtensionUI" */;
+			buildPhases = (
+				DA7E6B1420F790B0002BD535 /* Sources */,
+				DA7E6B1520F790B0002BD535 /* Frameworks */,
+				DA7E6B1620F790B0002BD535 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastCaicoIntentExtensionUI;
+			productName = FastCaicoIntentExtensionUI;
+			productReference = DA7E6B1820F790B0002BD535 /* FastCaicoIntentExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -474,6 +613,12 @@
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = DA78DE4620EE8FE6005CC2A0;
 					};
+					DA7E6B0E20F790B0002BD535 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					DA7E6B1720F790B0002BD535 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 				};
 			};
 			buildConfigurationList = DA78DE4220EE8FE6005CC2A0 /* Build configuration list for PBXProject "FastCaico" */;
@@ -492,6 +637,8 @@
 				DA78DE4620EE8FE6005CC2A0 /* FastCaico */,
 				DA78DE5D20EE8FE8005CC2A0 /* FastCaicoTests */,
 				DA78DE6820EE8FE8005CC2A0 /* FastCaicoUITests */,
+				DA7E6B0E20F790B0002BD535 /* FastCaicoIntentExtension */,
+				DA7E6B1720F790B0002BD535 /* FastCaicoIntentExtensionUI */,
 			);
 		};
 /* End PBXProject section */
@@ -527,6 +674,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7E6B0D20F790B0002BD535 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7E6B1620F790B0002BD535 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7E6B2020F790B0002BD535 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +774,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7E6B3920F794F9002BD535 /* IntentsManager.swift in Sources */,
 				DA7AD3C420F63ED400FE241B /* FoodCartViewController.swift in Sources */,
 				DA7AD3CB20F6BC5E00FE241B /* NotificationHandler.swift in Sources */,
 				53B5361A20F3D3240073AAD0 /* BaseViewController.swift in Sources */,
@@ -622,6 +785,7 @@
 				DA7AD3BD20F5409100FE241B /* MainDish.swift in Sources */,
 				537333A820F4E6AD002B9F0F /* ViewProtocols.swift in Sources */,
 				539FB73320F5417E00A76CF8 /* MainDish.swift in Sources */,
+				DA7E6B2F20F790BB002BD535 /* IntentHandler.swift in Sources */,
 				539FB73820F54C6800A76CF8 /* OrderSummaryView.swift in Sources */,
 				531BD68620F6778F00A9A6C8 /* GarnishesHeaderView.swift in Sources */,
 				537333AD20F4EB60002B9F0F /* UITableViewExtension.swift in Sources */,
@@ -631,7 +795,9 @@
 				DA7AD3C820F69CED00FE241B /* UINavigationControllerExtension.swift in Sources */,
 				DA7AD3C620F6449D00FE241B /* FoodCart.swift in Sources */,
 				DA78DE7F20EE98BC005CC2A0 /* Garnish.swift in Sources */,
+				DA7E6B3420F790CD002BD535 /* IntentViewController.swift in Sources */,
 				53B5362620F3F25F0073AAD0 /* FastCaicoNavigationController.swift in Sources */,
+				DA7E6B0A20F79091002BD535 /* FastCaicoIntents.intentdefinition in Sources */,
 				DA78DE5320EE8FE6005CC2A0 /* FastCaico.xcdatamodeld in Sources */,
 				537333B220F4F8EF002B9F0F /* GarnishViewController.swift in Sources */,
 				DA78DE4B20EE8FE6005CC2A0 /* AppDelegate.swift in Sources */,
@@ -658,6 +824,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA7E6B0B20F790B0002BD535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7E6B3320F790CC002BD535 /* IntentViewController.swift in Sources */,
+				DA7E6B3C20F7AAB3002BD535 /* FastCaicoIntents.intentdefinition in Sources */,
+				DA7E6B1220F790B0002BD535 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7E6B1420F790B0002BD535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7E6B3120F790BC002BD535 /* IntentHandler.swift in Sources */,
+				DA7E6B3D20F7AAB4002BD535 /* FastCaicoIntents.intentdefinition in Sources */,
+				DA7E6B1D20F790B0002BD535 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -671,6 +857,16 @@
 			target = DA78DE4620EE8FE6005CC2A0 /* FastCaico */;
 			targetProxy = DA78DE6A20EE8FE8005CC2A0 /* PBXContainerItemProxy */;
 		};
+		DA7E6B2320F790B0002BD535 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA7E6B1720F790B0002BD535 /* FastCaicoIntentExtensionUI */;
+			targetProxy = DA7E6B2220F790B0002BD535 /* PBXContainerItemProxy */;
+		};
+		DA7E6B2620F790B0002BD535 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA7E6B0E20F790B0002BD535 /* FastCaicoIntentExtension */;
+			targetProxy = DA7E6B2520F790B0002BD535 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -680,6 +876,14 @@
 				DA78DE5720EE8FE8005CC2A0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DA7E6B1E20F790B0002BD535 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7E6B1F20F790B0002BD535 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -805,6 +1009,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4BE6E3FBD61A40A1B017B5DF /* Pods-FastCaico.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45BX7W7QF5;
@@ -825,6 +1030,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9894E94EE84746056A7AF725 /* Pods-FastCaico.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45BX7W7QF5;
@@ -927,6 +1133,82 @@
 			};
 			name = Release;
 		};
+		DA7E6B2920F790B0002BD535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45BX7W7QF5;
+				INFOPLIST_FILE = FastCaicoIntentExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaico.FastCaicoIntentExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA7E6B2A20F790B0002BD535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45BX7W7QF5;
+				INFOPLIST_FILE = FastCaicoIntentExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaico.FastCaicoIntentExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA7E6B2C20F790B0002BD535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45BX7W7QF5;
+				INFOPLIST_FILE = FastCaicoIntentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaico.FastCaicoIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA7E6B2D20F790B0002BD535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45BX7W7QF5;
+				INFOPLIST_FILE = FastCaicoIntentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academy.FastCaico.FastCaicoIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -962,6 +1244,24 @@
 			buildConfigurations = (
 				DA78DE7920EE8FE8005CC2A0 /* Debug */,
 				DA78DE7A20EE8FE8005CC2A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7E6B2820F790B0002BD535 /* Build configuration list for PBXNativeTarget "FastCaicoIntentExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7E6B2920F790B0002BD535 /* Debug */,
+				DA7E6B2A20F790B0002BD535 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7E6B2B20F790B0002BD535 /* Build configuration list for PBXNativeTarget "FastCaicoIntentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7E6B2C20F790B0002BD535 /* Debug */,
+				DA7E6B2D20F790B0002BD535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
