@@ -27,16 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         userActivity.isEligibleForPrediction = true
-        if let intent = userActivity.interaction?.intent as? OrderFoodIntent, let dishName = intent.dish {
+        if let intent = userActivity.interaction?.intent as? SelectGarnishesIntent, let dishName = intent.dish {
             window = UIWindow(frame: UIScreen.main.bounds)
-            let controller = MeatViewController()
-            let dish = MainDish.all()?.filter { $0.name == dishName.identifier }.first
-            guard let chooseDish = dish else { return false }
-            let garnishesController = GarnishViewController(dish: chooseDish)
-            let navigation = FastCaicoNavigationController(rootViewController: controller)
-            navigation.pushViewController(garnishesController, animated: false)
-            window?.rootViewController = navigation
+            window?.rootViewController = IntentsManager.shared.routeToGarnishes(dish: dishName)
             window?.makeKeyAndVisible()
+        }
+        if let intent = userActivity.interaction?.intent as? OrderFoodIntent {
+//            let handler = OrderFoodHandler()
+            
         }
         return false
     }

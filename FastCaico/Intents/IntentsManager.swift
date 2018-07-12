@@ -16,7 +16,8 @@ class IntentsManager {
     
     func donateFoodOrder(order: FoodOrder) {
         let intent = OrderFoodIntent()
-        intent.foodOrder = INObject(identifier: order.dish.name, display: order.dish.name)
+        intent.dish = INObject(identifier: order.dish.name, display: order.dish.name)
+        intent.garnishes = order.garnishesResume
         if let image = UIImage(named: order.dish.image), let data = image.pngData() {
             intent.setImage(INImage(imageData: data), forParameterNamed: "foodOrder")
         }
@@ -24,14 +25,24 @@ class IntentsManager {
     }
     
     func donateMainDish(dish: MainDish) {
-        let intent = OrderFoodIntent()
+        let intent = SelectGarnishesIntent()
         intent.dish = INObject(identifier: dish.name, display: dish.name)
         if let image = UIImage(named: dish.image), let data = image.pngData() {
-            intent.setImage(INImage(imageData: data), forParameterNamed: "foodOrder")
+            intent.setImage(INImage(imageData: data), forParameterNamed: "dish")
         }
         donateIntent(intent: intent)
     }
     
+    
+    func routeToGarnishes(dish: INObject) -> UIViewController? {
+        let controller = MeatViewController()
+        let dish = MainDish.all()?.filter { $0.name == dish.identifier }.first
+        guard let chooseDish = dish else { return nil}
+        let garnishesController = GarnishViewController(dish: chooseDish)
+        let navigation = FastCaicoNavigationController(rootViewController: controller)
+        navigation.pushViewController(garnishesController, animated: false)
+        return navigation
+    }
     
     private func donateIntent(intent: INIntent) {
         let interaction = INInteraction(intent: intent, response: nil)

@@ -11,6 +11,13 @@ import Foundation
 @objcMembers class FoodOrder: NSObject {
     var dish: MainDish
     dynamic var garnishes: [String:Int] = [:]
+    var garnishesResume: String {
+        get {
+            return garnishes.map {"\($0.value) \($0.key)" }
+                .reversed()
+                .joined(separator: ", ")
+        }
+    }
     var restaurant: String
     var waitTime: Int
     

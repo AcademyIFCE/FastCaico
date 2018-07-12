@@ -27,6 +27,7 @@
 			<key>IntentsSupported</key>
 			<array>
 				<string>OrderFood</string>
+				<string>OrderFoodIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionMainStoryboard</key>

@@ -24,7 +24,7 @@
 			<key>INIntentDescriptionID</key>
 			<string>kLZaum</string>
 			<key>INIntentLastParameterTag</key>
-			<integer>4</integer>
+			<integer>5</integer>
 			<key>INIntentName</key>
 			<string>OrderFood</string>
 			<key>INIntentParameterCombinations</key>
@@ -44,7 +44,7 @@
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>Jbgdz7</string>
 				</dict>
-				<key>foodOrder</key>
+				<key>garnishes,dish</key>
 				<dict>
 					<key>INIntentParameterCombinationIsPrimary</key>
 					<true/>
@@ -55,7 +55,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Peça uma quentinha ${foodOrder}</string>
+					<string>Peça uma quentinha ${dish}</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>Nm5nUJ</string>
 				</dict>
@@ -66,18 +66,6 @@
 					<key>INIntentParameterDisplayPriority</key>
 					<integer>1</integer>
 					<key>INIntentParameterName</key>
-					<string>foodOrder</string>
-					<key>INIntentParameterSupportsMultipleValues</key>
-					<false/>
-					<key>INIntentParameterTag</key>
-					<integer>2</integer>
-					<key>INIntentParameterType</key>
-					<string>Object</string>
-				</dict>
-				<dict>
-					<key>INIntentParameterDisplayPriority</key>
-					<integer>2</integer>
-					<key>INIntentParameterName</key>
 					<string>dish</string>
 					<key>INIntentParameterSupportsMultipleValues</key>
 					<false/>
@@ -85,6 +73,18 @@
 					<integer>4</integer>
 					<key>INIntentParameterType</key>
 					<string>Object</string>
+				</dict>
+				<dict>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>2</integer>
+					<key>INIntentParameterName</key>
+					<string>garnishes</string>
+					<key>INIntentParameterSupportsMultipleValues</key>
+					<false/>
+					<key>INIntentParameterTag</key>
+					<integer>5</integer>
+					<key>INIntentParameterType</key>
+					<string>String</string>
 				</dict>
 			</array>
 			<key>INIntentResponse</key>
@@ -129,6 +129,95 @@
 			<true/>
 			<key>INIntentVerb</key>
 			<string>Order</string>
+		</dict>
+		<dict>
+			<key>INIntentCategory</key>
+			<string>generic</string>
+			<key>INIntentDefaultImageName</key>
+			<string>frangoAMilanesa</string>
+			<key>INIntentDescription</key>
+			<string>Selecione acompanhamentos para sua carne</string>
+			<key>INIntentDescriptionID</key>
+			<string>3Ec7MS</string>
+			<key>INIntentLastParameterTag</key>
+			<integer>2</integer>
+			<key>INIntentName</key>
+			<string>SelectGarnishes</string>
+			<key>INIntentParameterCombinations</key>
+			<dict>
+				<key>dish</key>
+				<dict>
+					<key>INIntentParameterCombinationIsPrimary</key>
+					<true/>
+					<key>INIntentParameterCombinationSubtitle</key>
+					<string>Peça uma quentinha de ${dish} e selecione os acompanhamentos</string>
+					<key>INIntentParameterCombinationSubtitleID</key>
+					<string>eeHTLc</string>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Peça quentinha de ${dish}</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>6duhgo</string>
+				</dict>
+			</dict>
+			<key>INIntentParameters</key>
+			<array>
+				<dict>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>1</integer>
+					<key>INIntentParameterName</key>
+					<string>dish</string>
+					<key>INIntentParameterSupportsMultipleValues</key>
+					<false/>
+					<key>INIntentParameterTag</key>
+					<integer>2</integer>
+					<key>INIntentParameterType</key>
+					<string>Object</string>
+				</dict>
+			</array>
+			<key>INIntentResponse</key>
+			<dict>
+				<key>INIntentResponseCodes</key>
+				<array>
+					<dict>
+						<key>INIntentResponseCodeFormatString</key>
+						<string></string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>rTIfb2</string>
+						<key>INIntentResponseCodeName</key>
+						<string>failure</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeFormatString</key>
+						<string></string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>mDM3eJ</string>
+						<key>INIntentResponseCodeName</key>
+						<string>success</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
+				</array>
+				<key>INIntentResponseLastParameterTag</key>
+				<integer>0</integer>
+				<key>INIntentResponseParameters</key>
+				<array/>
+			</dict>
+			<key>INIntentRestrictions</key>
+			<integer>0</integer>
+			<key>INIntentTitle</key>
+			<string>Selecione acompanhamentos</string>
+			<key>INIntentTitleID</key>
+			<string>m8xWY9</string>
+			<key>INIntentType</key>
+			<string>Custom</string>
+			<key>INIntentUserConfirmationRequired</key>
+			<false/>
+			<key>INIntentVerb</key>
+			<string>Do</string>
 		</dict>
 	</array>
 </dict>
