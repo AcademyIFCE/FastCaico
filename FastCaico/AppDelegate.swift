@@ -18,9 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         let controller = MeatViewController()
         let navigation = FastCaicoNavigationController(rootViewController: controller)
-        
         window?.rootViewController = navigation
         window?.makeKeyAndVisible()
+        
+        NotificationHandler.shared.permissionForUse()
         return true
     }
 

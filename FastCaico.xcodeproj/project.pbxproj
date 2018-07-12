@@ -46,6 +46,7 @@
 		DA7AD3C420F63ED400FE241B /* FoodCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD3C320F63ED400FE241B /* FoodCartViewController.swift */; };
 		DA7AD3C620F6449D00FE241B /* FoodCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD3C520F6449D00FE241B /* FoodCart.swift */; };
 		DA7AD3C820F69CED00FE241B /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD3C720F69CED00FE241B /* UINavigationControllerExtension.swift */; };
+		DA7AD3CB20F6BC5E00FE241B /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD3CA20F6BC5E00FE241B /* NotificationHandler.swift */; };
 		DAD07DAA20F534AC001C1ACF /* Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD07DA920F534AC001C1ACF /* Inspectables.swift */; };
 		DAE751423FCBEA8177A114A9 /* Pods_FastCaicoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D395298B28A6E93A128E9817 /* Pods_FastCaicoTests.framework */; };
 		DAFF16B520F4E99D00FBAAB5 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF16B320F4E99D00FBAAB5 /* OrderConfirmationViewController.swift */; };
@@ -119,6 +120,7 @@
 		DA7AD3C320F63ED400FE241B /* FoodCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCartViewController.swift; sourceTree = "<group>"; };
 		DA7AD3C520F6449D00FE241B /* FoodCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCart.swift; sourceTree = "<group>"; };
 		DA7AD3C720F69CED00FE241B /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
+		DA7AD3CA20F6BC5E00FE241B /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
 		DAD07DA920F534AC001C1ACF /* Inspectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inspectables.swift; sourceTree = "<group>"; };
 		DAFF16B320F4E99D00FBAAB5 /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 		DAFF16BD20F4ED7500FBAAB5 /* Inspectables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspectables.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 		DA78DE4920EE8FE6005CC2A0 /* FastCaico */ = {
 			isa = PBXGroup;
 			children = (
+				DA7AD3C920F6BC4D00FE241B /* Utils */,
 				DAFF16BF20F4F74500FBAAB5 /* Resources */,
 				537333A920F4EAEA002B9F0F /* Extensions */,
 				537333A620F4E69C002B9F0F /* Protocols */,
@@ -356,6 +359,14 @@
 				DA7AD3C320F63ED400FE241B /* FoodCartViewController.swift */,
 			);
 			path = FoodCart;
+			sourceTree = "<group>";
+		};
+		DA7AD3C920F6BC4D00FE241B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DA7AD3CA20F6BC5E00FE241B /* NotificationHandler.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		DAD07DA820F5346E001C1ACF /* Recovered References */ = {
@@ -602,6 +613,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA7AD3C420F63ED400FE241B /* FoodCartViewController.swift in Sources */,
+				DA7AD3CB20F6BC5E00FE241B /* NotificationHandler.swift in Sources */,
 				53B5361A20F3D3240073AAD0 /* BaseViewController.swift in Sources */,
 				DAD07DAA20F534AC001C1ACF /* Inspectables.swift in Sources */,
 				53B5361720F3D2940073AAD0 /* MeatViewController.swift in Sources */,
