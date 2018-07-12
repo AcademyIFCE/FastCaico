@@ -24,7 +24,7 @@ class BaseViewController: UIViewController {
         let image = UIImage(named: "car")
         let rightBarButtonItem = UIBarButtonItem(image: image!, style: .plain, target: self, action: #selector(loadShoppingCart))
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
-        self.navigationItem.setHidesBackButton(true, animated: false)
+//        self.navigationItem.setHidesBackButton(true, animated: false)
     }
     
     override func viewWillAppear(_ animated: Bool) {

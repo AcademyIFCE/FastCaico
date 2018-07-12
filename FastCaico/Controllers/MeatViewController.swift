@@ -10,7 +10,7 @@ import UIKit
 
 class MeatViewController: BaseViewController {
 
-    private lazy var tableView: UITableView = {
+    public lazy var tableView: UITableView = {
         let table = UITableView()
         table.dataSource = self
         table.delegate = self
@@ -25,6 +25,7 @@ class MeatViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
+        self.navigationController?.delegate = self
         
         self.tableView.register(MeatTableViewCell.self)
         self.tableView.registerHeader(FastCaicoHeaderView.self)
@@ -40,7 +41,7 @@ class MeatViewController: BaseViewController {
                 NSLayoutConstraint(item: tableView, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottom, multiplier: 1, constant: 0)
         ])
     }
-
+    
 }
 
 extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
@@ -73,6 +74,7 @@ extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
         self.navigationController?.pushViewController(controller, animated: true)
     }
     
+    
     func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         return 50
     }
@@ -80,4 +82,18 @@ extension MeatViewController : UITableViewDelegate, UITableViewDataSource {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.applyShadowToHeader(tableView)
     }
+}
+
+extension MeatViewController : UINavigationControllerDelegate {
+    
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        let selectedIndex = tableView.indexPathForSelectedRow
+        let cell = tableView.cellForRow(at: selectedIndex!)
+        let auxiliaryFrame = self.tableView.convert(cell!.frame, to: tableView.superview!)
+        let isPresenting = operation == .push ? true : false
+        return MeatViewControllerAnimatedTransitioning(withFrame: auxiliaryFrame, isPresenting: isPresenting)
+    }
+
+
 }
