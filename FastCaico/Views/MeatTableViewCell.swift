@@ -21,5 +21,4 @@ class MeatTableViewCell: UITableViewCell {
         self.descriptionLabel.text = dish?.description
         self.priceLabel.text = String(format: "R$ %.2f", dish?.price ?? 0).replacingOccurrences(of: ".", with: ",")
     }
-    
 }

@@ -9,6 +9,5 @@
 import Foundation
 
 struct Garnish: Codable, ActiveRecord, Hashable {
-    
     var name: String
 }

@@ -16,6 +16,7 @@ class FoodCart {
     
     func makeOrder() {
         foodOrders.forEach { IntentsManager.shared.donateMainDish(dish: $0.dish) }
+        foodOrders.forEach { IntentsManager.shared.donateFoodOrder(order: $0) }
         //Comunicate with server
         let category = "\(Int.random(in: 1..<10000))"
         // 30 segundos

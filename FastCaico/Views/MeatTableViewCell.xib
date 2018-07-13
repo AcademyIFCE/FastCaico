@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,11 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="118" id="KGk-i7-Jjw" customClass="MeatTableViewCell" customModule="FastCaico" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="447" height="118"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="122" id="KGk-i7-Jjw" customClass="MeatTableViewCell" customModule="FastCaico" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="122"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="447" height="117.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="423" height="121.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" image="picanhaBovina" translatesAutoresizingMaskIntoConstraints="NO" id="kyO-GS-cVj">
@@ -33,16 +33,16 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="BbD-mL-BbF">
-                        <rect key="frame" x="326.5" y="24.5" width="104.5" height="67.5"/>
+                        <rect key="frame" x="319" y="17.5" width="88" height="82"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 16,00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIk-DE-YNU">
-                                <rect key="frame" x="31.5" y="0.0" width="73" height="20.5"/>
+                                <rect key="frame" x="15" y="0.0" width="73" height="20.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" name="caicoBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="200g de picanha bovina assada  na brasa" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCe-C7-tWK">
-                                <rect key="frame" x="0.0" y="24.5" width="104.5" height="43"/>
+                                <rect key="frame" x="0.0" y="24.5" width="88" height="57.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" name="caicoBlue"/>
                                 <nil key="highlightedColor"/>
@@ -72,11 +72,11 @@
                 <outlet property="priceLabel" destination="rIk-DE-YNU" id="jdw-Nv-3K4"/>
                 <outlet property="titleLabel" destination="cxv-Yf-Xjb" id="5l4-qZ-Mti"/>
             </connections>
-            <point key="canvasLocation" x="97.5" y="91"/>
+            <point key="canvasLocation" x="85.5" y="106"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="picanhaBovina" width="102" height="56"/>
+        <image name="picanhaBovina" width="204" height="112"/>
         <namedColor name="caicoBlue">
             <color red="0.20784313725490197" green="0.20392156862745098" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

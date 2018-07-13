@@ -24,6 +24,7 @@ class GarnishesHeaderView: UIView, NibLoadableView {
             self.mainDishNameLabel.text = mainDish?.name
             self.mainDishDescriptionLabel.text = mainDish?.description
             self.mainDishPriceLabel.text = String(format: "R$ %.2f", mainDish?.price ?? 0).replacingOccurrences(of: ".", with: ",")
+            self.mainDishPriceLabel.sizeToFit()
         }
     }
     
@@ -98,7 +99,8 @@ class GarnishesHeaderView: UIView, NibLoadableView {
             })
             
         }, completion: { (success) in
-            
+            self.layoutIfNeeded()
+            self.layoutSubviews()
 
         })
         

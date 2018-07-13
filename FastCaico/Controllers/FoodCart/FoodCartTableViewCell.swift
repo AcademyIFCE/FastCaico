@@ -24,9 +24,7 @@ class FoodCartTableViewCell: UITableViewCell {
     func setup(with order: FoodOrder) {
         foodImageView.image = UIImage(named: order.dish.image)
         mainDishNameLabel.text = order.dish.name
-        let garnishesResume = order.garnishes.map {"\($0.value) \($0.key)" }
-                                      .reversed()
-                                      .joined(separator: ", ")
+        let garnishesResume = order.garnishesResume
         garnishesLabel.text = "\(order.dish.description ?? "") \n\(garnishesResume)"
         foodPriceLabel.text = String(format: "R$ %.2f", order.dish.price).replacingOccurrences(of: ".", with: ",")
     }

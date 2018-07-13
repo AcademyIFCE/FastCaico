@@ -16,5 +16,6 @@ class OrderFoodIntentHandler: NSObject, OrderFoodIntentHandling {
         let garnishesController = GarnishViewController(dish: chooseDish)
         guard let root = UIApplication.shared.keyWindow?.rootViewController else { return }
         root.navigationController?.pushViewController(garnishesController, animated: false)
+        completion(OrderFoodIntentResponse(code: .success, userActivity: nil))
     }
 }

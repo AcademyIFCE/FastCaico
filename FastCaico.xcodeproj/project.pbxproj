@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		531BD68420F6776700A9A6C8 /* GarnishesHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 531BD68320F6776700A9A6C8 /* GarnishesHeaderView.xib */; };
 		531BD68620F6778F00A9A6C8 /* GarnishesHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531BD68520F6778F00A9A6C8 /* GarnishesHeaderView.swift */; };
+		531BD68A20F6BFBF00A9A6C8 /* MeatViewControllerAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531BD68920F6BFBF00A9A6C8 /* MeatViewControllerAnimatedTransitioning.swift */; };
 		537333A820F4E6AD002B9F0F /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537333A720F4E6AD002B9F0F /* ViewProtocols.swift */; };
 		537333AB20F4EB0E002B9F0F /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537333AA20F4EB0E002B9F0F /* UITableViewCellExtension.swift */; };
 		537333AD20F4EB60002B9F0F /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537333AC20F4EB60002B9F0F /* UITableViewExtension.swift */; };
@@ -16,8 +17,6 @@
 		537333B320F4F8EF002B9F0F /* GarnishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 537333B120F4F8EF002B9F0F /* GarnishViewController.xib */; };
 		537333B720F4FC5E002B9F0F /* GarnishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537333B520F4FC5E002B9F0F /* GarnishTableViewCell.swift */; };
 		537333B820F4FC5E002B9F0F /* GarnishTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 537333B620F4FC5E002B9F0F /* GarnishTableViewCell.xib */; };
-		539FB73320F5417E00A76CF8 /* MainDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7C20EE98B1005CC2A0 /* MainDish.swift */; };
-		539FB73420F5417E00A76CF8 /* Garnish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7E20EE98BC005CC2A0 /* Garnish.swift */; };
 		539FB73520F5417E00A76CF8 /* FoodOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF16C420F522B200FBAAB5 /* FoodOrder.swift */; };
 		539FB73820F54C6800A76CF8 /* OrderSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539FB73720F54C6800A76CF8 /* OrderSummaryView.swift */; };
 		539FB73A20F54C7900A76CF8 /* OrderSummaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 539FB73920F54C7900A76CF8 /* OrderSummaryView.xib */; };
@@ -63,6 +62,7 @@
 		DA7E6B3D20F7AAB4002BD535 /* FastCaicoIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B0920F79091002BD535 /* FastCaicoIntents.intentdefinition */; };
 		DA7E6B4020F8D59A002BD535 /* OrderFoodIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B3F20F8D59A002BD535 /* OrderFoodIntentHandler.swift */; };
 		DA7E6B4220F8D755002BD535 /* SelectGarnishesIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B4120F8D755002BD535 /* SelectGarnishesIntentHandler.swift */; };
+		DA80F67620F8F45700B636C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE5420EE8FE8005CC2A0 /* Assets.xcassets */; };
 		DAD07DAA20F534AC001C1ACF /* Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD07DA920F534AC001C1ACF /* Inspectables.swift */; };
 		DAE751423FCBEA8177A114A9 /* Pods_FastCaicoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D395298B28A6E93A128E9817 /* Pods_FastCaicoTests.framework */; };
 		DAFF16B520F4E99D00FBAAB5 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF16B320F4E99D00FBAAB5 /* OrderConfirmationViewController.swift */; };
@@ -122,6 +122,7 @@
 		4BE6E3FBD61A40A1B017B5DF /* Pods-FastCaico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCaico.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastCaico/Pods-FastCaico.debug.xcconfig"; sourceTree = "<group>"; };
 		531BD68320F6776700A9A6C8 /* GarnishesHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GarnishesHeaderView.xib; sourceTree = "<group>"; };
 		531BD68520F6778F00A9A6C8 /* GarnishesHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarnishesHeaderView.swift; sourceTree = "<group>"; };
+		531BD68920F6BFBF00A9A6C8 /* MeatViewControllerAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatViewControllerAnimatedTransitioning.swift; sourceTree = "<group>"; };
 		537333A720F4E6AD002B9F0F /* ViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
 		537333AA20F4EB0E002B9F0F /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 		537333AC20F4EB60002B9F0F /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
@@ -236,6 +237,22 @@
 				531BD68520F6778F00A9A6C8 /* GarnishesHeaderView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		531BD68720F6BF8900A9A6C8 /* Transitons */ = {
+			isa = PBXGroup;
+			children = (
+				531BD68820F6BF9300A9A6C8 /* MeatController */,
+			);
+			path = Transitons;
+			sourceTree = "<group>";
+		};
+		531BD68820F6BF9300A9A6C8 /* MeatController */ = {
+			isa = PBXGroup;
+			children = (
+				531BD68920F6BFBF00A9A6C8 /* MeatViewControllerAnimatedTransitioning.swift */,
+			);
+			path = MeatController;
 			sourceTree = "<group>";
 		};
 		537333A620F4E69C002B9F0F /* Protocols */ = {
@@ -376,6 +393,7 @@
 				53F1453220F7F572000DCF43 /* FastCaico.entitlements */,
 				DA7E6B3720F793C6002BD535 /* Intents */,
 				DA7AD3C920F6BC4D00FE241B /* Utils */,
+				531BD68720F6BF8900A9A6C8 /* Transitons */,
 				DAFF16BF20F4F74500FBAAB5 /* Resources */,
 				537333A920F4EAEA002B9F0F /* Extensions */,
 				537333A620F4E69C002B9F0F /* Protocols */,
@@ -701,6 +719,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA80F67620F8F45700B636C9 /* Assets.xcassets in Resources */,
 				DA7E6B2020F790B0002BD535 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -797,7 +816,6 @@
 				537333AB20F4EB0E002B9F0F /* UITableViewCellExtension.swift in Sources */,
 				DA7AD3BD20F5409100FE241B /* MainDish.swift in Sources */,
 				537333A820F4E6AD002B9F0F /* ViewProtocols.swift in Sources */,
-				539FB73320F5417E00A76CF8 /* MainDish.swift in Sources */,
 				DA7E6B4020F8D59A002BD535 /* OrderFoodIntentHandler.swift in Sources */,
 				DA7E6B2F20F790BB002BD535 /* IntentHandler.swift in Sources */,
 				539FB73820F54C6800A76CF8 /* OrderSummaryView.swift in Sources */,
@@ -813,11 +831,11 @@
 				53B5362620F3F25F0073AAD0 /* FastCaicoNavigationController.swift in Sources */,
 				DA7E6B0A20F79091002BD535 /* FastCaicoIntents.intentdefinition in Sources */,
 				DA78DE5320EE8FE6005CC2A0 /* FastCaico.xcdatamodeld in Sources */,
+				531BD68A20F6BFBF00A9A6C8 /* MeatViewControllerAnimatedTransitioning.swift in Sources */,
 				537333B220F4F8EF002B9F0F /* GarnishViewController.swift in Sources */,
 				DA78DE4B20EE8FE6005CC2A0 /* AppDelegate.swift in Sources */,
 				539FB73520F5417E00A76CF8 /* FoodOrder.swift in Sources */,
 				DAFF16B520F4E99D00FBAAB5 /* OrderConfirmationViewController.swift in Sources */,
-				539FB73420F5417E00A76CF8 /* Garnish.swift in Sources */,
 				DA78DE8620F3EF38005CC2A0 /* ActiveRecord.swift in Sources */,
 				DA7E6B4220F8D755002BD535 /* SelectGarnishesIntentHandler.swift in Sources */,
 			);

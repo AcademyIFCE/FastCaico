@@ -30,10 +30,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let intent = userActivity.interaction?.intent as? SelectGarnishesIntent {
             let handler = SelectGarnishesIntentHandler()
             handler.handle(intent: intent) { _ in}
+            return true
         }
         if let intent = userActivity.interaction?.intent as? OrderFoodIntent {
             let handler = OrderFoodIntentHandler()
-            
+            handler.handle(intent: intent) {_ in}
+            return true
         }
         return false
     }

@@ -39,6 +39,12 @@ class GarnishViewController: BaseViewController {
         self.garnishTableView.register(GarnishTableViewCell.self)
         self.garnishTableView.registerHeader(FastCaicoHeaderView.self)
     }
+    
+    @IBAction func didSwipeDownHeaderView(_ sender: UISwipeGestureRecognizer) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
 
 }
 
@@ -54,6 +60,7 @@ extension GarnishViewController : UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as GarnishTableViewCell
         cell.delegate = self
         cell.setup(with: garnish, andFoodOrder: foodOrder)
+        
         return cell
     }
     

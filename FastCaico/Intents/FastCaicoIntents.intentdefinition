@@ -24,7 +24,7 @@
 			<key>INIntentDescriptionID</key>
 			<string>kLZaum</string>
 			<key>INIntentLastParameterTag</key>
-			<integer>5</integer>
+			<integer>10</integer>
 			<key>INIntentName</key>
 			<string>OrderFood</string>
 			<key>INIntentParameterCombinations</key>
@@ -49,7 +49,7 @@
 					<key>INIntentParameterCombinationIsPrimary</key>
 					<true/>
 					<key>INIntentParameterCombinationSubtitle</key>
-					<string>Peça uma quentinha com minha carne e meus acompanhamentos favoritos</string>
+					<string>Peça uma quentinha de ${dish} e ${garnishes}</string>
 					<key>INIntentParameterCombinationSubtitleID</key>
 					<string>I1G1ti</string>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
@@ -83,6 +83,30 @@
 					<false/>
 					<key>INIntentParameterTag</key>
 					<integer>5</integer>
+					<key>INIntentParameterType</key>
+					<string>String</string>
+				</dict>
+				<dict>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>3</integer>
+					<key>INIntentParameterName</key>
+					<string>price</string>
+					<key>INIntentParameterSupportsMultipleValues</key>
+					<false/>
+					<key>INIntentParameterTag</key>
+					<integer>8</integer>
+					<key>INIntentParameterType</key>
+					<string>Decimal</string>
+				</dict>
+				<dict>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>4</integer>
+					<key>INIntentParameterName</key>
+					<string>image</string>
+					<key>INIntentParameterSupportsMultipleValues</key>
+					<false/>
+					<key>INIntentParameterTag</key>
+					<integer>10</integer>
 					<key>INIntentParameterType</key>
 					<string>String</string>
 				</dict>

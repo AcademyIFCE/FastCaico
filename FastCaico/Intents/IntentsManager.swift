@@ -18,6 +18,8 @@ class IntentsManager {
         let intent = OrderFoodIntent()
         intent.dish = INObject(identifier: order.dish.name, display: order.dish.name)
         intent.garnishes = order.garnishesResume
+        intent.price = NSNumber(value: order.dish.price)
+        intent.image = order.dish.image
         if let image = UIImage(named: order.dish.image), let data = image.pngData() {
             intent.setImage(INImage(imageData: data), forParameterNamed: "foodOrder")
         }

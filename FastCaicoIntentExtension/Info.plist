@@ -32,6 +32,7 @@
 			<array>
 				<string>OrderFood</string>
 				<string>OrderFoodIntent</string>
+				<string>SelectGarnishesIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
