@@ -68,6 +68,7 @@ class FoodCartViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         navigationController?.navigationBar.barTintColor = UIColor(named: "caicoBlue")
         navigationController?.navigationBar.isTranslucent = false
+        navigationController?.delegate = self
         
         navigationItem.rightBarButtonItem = closeBarButton
         title = "Carrinho"
@@ -143,4 +144,16 @@ extension FoodCartViewController: OrderSummaryViewDelegate {
     func titleForDescriptionLabel() -> String? {
         return totalAmount
     }
+}
+
+extension FoodCartViewController : UINavigationControllerDelegate {
+    
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        let framePoint = self.orderConfirmationView.convert(self.orderConfirmationView.addView.frame , to: self.orderConfirmationView.superview)
+        let color = self.orderConfirmationView.addView.backgroundColor
+        
+        return FoodCartViewControllerAnimatedTransitioning(with: framePoint, andColor: color!)
+    }
+    
 }

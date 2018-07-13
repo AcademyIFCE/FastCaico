@@ -28,7 +28,7 @@ class OrderSummaryView: UIView, NibLoadableView {
     @IBOutlet weak private var priceLabel: UILabel!
     @IBOutlet weak private var titleLabel: UILabel!
     @IBOutlet weak private var descriptionLabel: UILabel!
-    @IBOutlet weak private var addView: UIView!
+    @IBOutlet weak var addView: UIView!
     @IBOutlet weak private var titleAddViewLabel: UILabel!
     
     private var observer: NSKeyValueObservation?

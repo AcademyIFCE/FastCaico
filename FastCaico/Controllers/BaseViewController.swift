@@ -29,6 +29,10 @@ class BaseViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.setNeedsStatusBarAppearanceUpdate()
+        
+        let image = FoodCart.shared.foodOrders.isEmpty ? nil : UIImage(named: "car")
+        self.navigationItem.rightBarButtonItem?.isEnabled = !FoodCart.shared.foodOrders.isEmpty
+        self.navigationItem.rightBarButtonItem?.image = image
     }
     
     @objc private func loadShoppingCart() {
