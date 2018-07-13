@@ -9,8 +9,9 @@
 import UIKit
 
 extension UINavigationController {
-    open override var childForStatusBarStyle: UIViewController? {
-        return visibleViewController
+    
+    override open var preferredStatusBarStyle : UIStatusBarStyle {
+        return topViewController?.preferredStatusBarStyle ?? .default
     }
     
     func changeNavigationStyle() {

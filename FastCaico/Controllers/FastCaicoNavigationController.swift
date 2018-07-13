@@ -20,6 +20,9 @@ class FastCaicoNavigationController: UINavigationController {
         self.navigationBar.tintColor = caicoColor
         let textAttributes: [NSAttributedString.Key : Any] = [NSAttributedString.Key.foregroundColor: caicoColor ?? .black]
         self.navigationBar.titleTextAttributes = textAttributes
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
 }
