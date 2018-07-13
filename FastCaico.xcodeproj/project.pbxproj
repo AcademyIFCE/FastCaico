@@ -61,6 +61,8 @@
 		DA7E6B3920F794F9002BD535 /* IntentsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B3820F794F9002BD535 /* IntentsManager.swift */; };
 		DA7E6B3C20F7AAB3002BD535 /* FastCaicoIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B0920F79091002BD535 /* FastCaicoIntents.intentdefinition */; };
 		DA7E6B3D20F7AAB4002BD535 /* FastCaicoIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B0920F79091002BD535 /* FastCaicoIntents.intentdefinition */; };
+		DA7E6B4020F8D59A002BD535 /* OrderFoodIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B3F20F8D59A002BD535 /* OrderFoodIntentHandler.swift */; };
+		DA7E6B4220F8D755002BD535 /* SelectGarnishesIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B4120F8D755002BD535 /* SelectGarnishesIntentHandler.swift */; };
 		DAD07DAA20F534AC001C1ACF /* Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD07DA920F534AC001C1ACF /* Inspectables.swift */; };
 		DAE751423FCBEA8177A114A9 /* Pods_FastCaicoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D395298B28A6E93A128E9817 /* Pods_FastCaicoTests.framework */; };
 		DAFF16B520F4E99D00FBAAB5 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF16B320F4E99D00FBAAB5 /* OrderConfirmationViewController.swift */; };
@@ -175,6 +177,8 @@
 		DA7E6B1F20F790B0002BD535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		DA7E6B2120F790B0002BD535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA7E6B3820F794F9002BD535 /* IntentsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentsManager.swift; sourceTree = "<group>"; };
+		DA7E6B3F20F8D59A002BD535 /* OrderFoodIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFoodIntentHandler.swift; sourceTree = "<group>"; };
+		DA7E6B4120F8D755002BD535 /* SelectGarnishesIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGarnishesIntentHandler.swift; sourceTree = "<group>"; };
 		DAD07DA920F534AC001C1ACF /* Inspectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inspectables.swift; sourceTree = "<group>"; };
 		DAFF16B320F4E99D00FBAAB5 /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 		DAFF16BD20F4ED7500FBAAB5 /* Inspectables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspectables.swift; sourceTree = "<group>"; };
@@ -469,6 +473,8 @@
 			children = (
 				DA7E6B0920F79091002BD535 /* FastCaicoIntents.intentdefinition */,
 				DA7E6B3820F794F9002BD535 /* IntentsManager.swift */,
+				DA7E6B3F20F8D59A002BD535 /* OrderFoodIntentHandler.swift */,
+				DA7E6B4120F8D755002BD535 /* SelectGarnishesIntentHandler.swift */,
 			);
 			path = Intents;
 			sourceTree = "<group>";
@@ -792,6 +798,7 @@
 				DA7AD3BD20F5409100FE241B /* MainDish.swift in Sources */,
 				537333A820F4E6AD002B9F0F /* ViewProtocols.swift in Sources */,
 				539FB73320F5417E00A76CF8 /* MainDish.swift in Sources */,
+				DA7E6B4020F8D59A002BD535 /* OrderFoodIntentHandler.swift in Sources */,
 				DA7E6B2F20F790BB002BD535 /* IntentHandler.swift in Sources */,
 				539FB73820F54C6800A76CF8 /* OrderSummaryView.swift in Sources */,
 				531BD68620F6778F00A9A6C8 /* GarnishesHeaderView.swift in Sources */,
@@ -812,6 +819,7 @@
 				DAFF16B520F4E99D00FBAAB5 /* OrderConfirmationViewController.swift in Sources */,
 				539FB73420F5417E00A76CF8 /* Garnish.swift in Sources */,
 				DA78DE8620F3EF38005CC2A0 /* ActiveRecord.swift in Sources */,
+				DA7E6B4220F8D755002BD535 /* SelectGarnishesIntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

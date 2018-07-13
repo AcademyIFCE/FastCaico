@@ -113,9 +113,22 @@
 					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>INIntentResponseParameters</key>
-				<array/>
+				<array>
+					<dict>
+						<key>INIntentResponseParameterDisplayPriority</key>
+						<integer>1</integer>
+						<key>INIntentResponseParameterName</key>
+						<string>waitTime</string>
+						<key>INIntentResponseParameterSupportsMultipleValues</key>
+						<false/>
+						<key>INIntentResponseParameterTag</key>
+						<integer>2</integer>
+						<key>INIntentResponseParameterType</key>
+						<string>Integer</string>
+					</dict>
+				</array>
 			</dict>
 			<key>INIntentRestrictions</key>
 			<integer>0</integer>

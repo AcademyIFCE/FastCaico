@@ -27,13 +27,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         userActivity.isEligibleForPrediction = true
-        if let intent = userActivity.interaction?.intent as? SelectGarnishesIntent, let dishName = intent.dish {
-            window = UIWindow(frame: UIScreen.main.bounds)
-            window?.rootViewController = IntentsManager.shared.routeToGarnishes(dish: dishName)
-            window?.makeKeyAndVisible()
+        if let intent = userActivity.interaction?.intent as? SelectGarnishesIntent {
+            let handler = SelectGarnishesIntentHandler()
+            handler.handle(intent: intent) { _ in}
         }
         if let intent = userActivity.interaction?.intent as? OrderFoodIntent {
-//            let handler = OrderFoodHandler()
+            let handler = OrderFoodIntentHandler()
             
         }
         return false
