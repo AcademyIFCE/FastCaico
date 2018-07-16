@@ -17,8 +17,6 @@
 		<dict>
 			<key>INIntentCategory</key>
 			<string>order</string>
-			<key>INIntentDefaultImageName</key>
-			<string>carneDeSol</string>
 			<key>INIntentDescription</key>
 			<string>Pedir uma deliciosa quentinha</string>
 			<key>INIntentDescriptionID</key>
@@ -29,21 +27,6 @@
 			<string>OrderFood</string>
 			<key>INIntentParameterCombinations</key>
 			<dict>
-				<key>dish</key>
-				<dict>
-					<key>INIntentParameterCombinationIsPrimary</key>
-					<false/>
-					<key>INIntentParameterCombinationSubtitle</key>
-					<string>Peça uma quentinha de ${dish} e selecione os acompanhamentos</string>
-					<key>INIntentParameterCombinationSubtitleID</key>
-					<string>FAnZkv</string>
-					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<false/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>Peça uma quentinha de ${dish}</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>Jbgdz7</string>
-				</dict>
 				<key>garnishes,dish</key>
 				<dict>
 					<key>INIntentParameterCombinationIsPrimary</key>
@@ -55,7 +38,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Peça uma quentinha ${dish}</string>
+					<string>Peça sua quentinha favorita de ${dish}</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>Nm5nUJ</string>
 				</dict>
@@ -157,7 +140,7 @@
 			<key>INIntentRestrictions</key>
 			<integer>0</integer>
 			<key>INIntentTitle</key>
-			<string>Pedir quentinha</string>
+			<string>Pedir quentinha favorita</string>
 			<key>INIntentTitleID</key>
 			<string>RzqEjm</string>
 			<key>INIntentType</key>
@@ -169,9 +152,7 @@
 		</dict>
 		<dict>
 			<key>INIntentCategory</key>
-			<string>generic</string>
-			<key>INIntentDefaultImageName</key>
-			<string>frangoAMilanesa</string>
+			<string>order</string>
 			<key>INIntentDescription</key>
 			<string>Selecione acompanhamentos para sua carne</string>
 			<key>INIntentDescriptionID</key>
@@ -191,7 +172,7 @@
 					<key>INIntentParameterCombinationSubtitleID</key>
 					<string>eeHTLc</string>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<true/>
+					<false/>
 					<key>INIntentParameterCombinationTitle</key>
 					<string>Peça quentinha de ${dish}</string>
 					<key>INIntentParameterCombinationTitleID</key>
@@ -252,9 +233,9 @@
 			<key>INIntentType</key>
 			<string>Custom</string>
 			<key>INIntentUserConfirmationRequired</key>
-			<false/>
+			<true/>
 			<key>INIntentVerb</key>
-			<string>Do</string>
+			<string>Order</string>
 		</dict>
 	</array>
 </dict>

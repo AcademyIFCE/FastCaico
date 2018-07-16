@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "carIcon.pdf"
+      "filename" : "siriIcon (1).pdf"
     }
   ],
   "info" : {
@@ -10,7 +10,7 @@
     "author" : "xcode"
   },
   "properties" : {
-    "preserves-vector-representation" : true,
-    "auto-scaling" : "auto"
+    "template-rendering-intent" : "template",
+    "preserves-vector-representation" : true
   }
 }

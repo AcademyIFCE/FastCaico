@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IntentsUI
 
 class FoodCartViewController: UIViewController {
     
@@ -104,6 +105,32 @@ extension FoodCartViewController: UITableViewDelegate, UITableViewDataSource {
         return true
     }
     
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let addSiri = UIContextualAction(style: .normal, title: nil) { (_ , _ , _) in
+            let order = FoodCart.shared.foodOrders[indexPath.row]
+            if let shortcut = VoiceShortcutsDataManager.shared.voiceShortcut(for: order) {
+                let editVoiceShortcutViewController = INUIEditVoiceShortcutViewController(voiceShortcut: shortcut)
+                DispatchQueue.main.async { [unowned self] in
+                    editVoiceShortcutViewController.delegate = self
+                    self.present(editVoiceShortcutViewController, animated: true, completion: nil)
+                }
+            } else {
+                if let shortcut = INShortcut(intent: order.intent) {
+                    let addVoiceShortcutVC = INUIAddVoiceShortcutViewController(shortcut: shortcut)
+                    DispatchQueue.main.async { [unowned self] in
+                        addVoiceShortcutVC.delegate = self
+                        self.present(addVoiceShortcutVC, animated: true, completion: nil)
+                    }
+                }
+            }
+        }
+        
+        addSiri.backgroundColor = UIColor(named: "caicoGreen")
+        addSiri.image = UIImage(named: "siriIcon")
+        
+        return UISwipeActionsConfiguration(actions: [addSiri])
+    }
+    
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let deleteButton = UIContextualAction(style: .normal, title: nil) { (_ , _ , _) in
             DispatchQueue.main.async { [unowned self] in
@@ -155,5 +182,33 @@ extension FoodCartViewController : UINavigationControllerDelegate {
         
         return FoodCartViewControllerAnimatedTransitioning(with: framePoint, andColor: color!)
     }
+    
+}
+
+extension FoodCartViewController: INUIAddVoiceShortcutViewControllerDelegate {
+    func addVoiceShortcutViewController(_ controller: INUIAddVoiceShortcutViewController, didFinishWith voiceShortcut: INVoiceShortcut?, error: Error?) {
+        if error != nil { print(error!.localizedDescription) }
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func addVoiceShortcutViewControllerDidCancel(_ controller: INUIAddVoiceShortcutViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+}
+
+extension FoodCartViewController: INUIEditVoiceShortcutViewControllerDelegate {
+    func editVoiceShortcutViewController(_ controller: INUIEditVoiceShortcutViewController, didDeleteVoiceShortcutWithIdentifier deletedVoiceShortcutIdentifier: UUID) {
+        print("edited \(deletedVoiceShortcutIdentifier)")
+    }
+    
+    func editVoiceShortcutViewController(_ controller: INUIEditVoiceShortcutViewController, didUpdate voiceShortcut: INVoiceShortcut?, error: Error?) {
+        if error != nil { print(error!.localizedDescription) }
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func editVoiceShortcutViewControllerDidCancel(_ controller: INUIEditVoiceShortcutViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
 }

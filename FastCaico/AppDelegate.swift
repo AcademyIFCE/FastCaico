@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import os.log
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,21 +21,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigation = FastCaicoNavigationController(rootViewController: controller)
         window?.rootViewController = navigation
         window?.makeKeyAndVisible()
-        
         NotificationHandler.shared.permissionForUse()
+        VoiceShortcutsDataManager.shared.updateVoiceShortcuts(completion: nil)
         return true
     }
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         userActivity.isEligibleForPrediction = true
         if let intent = userActivity.interaction?.intent as? SelectGarnishesIntent {
+            os_log("Select Intent")
             let handler = SelectGarnishesIntentHandler()
             handler.handle(intent: intent) { _ in}
-            return true
-        }
-        if let intent = userActivity.interaction?.intent as? OrderFoodIntent {
-            let handler = OrderFoodIntentHandler()
-            handler.handle(intent: intent) {_ in}
             return true
         }
         return false

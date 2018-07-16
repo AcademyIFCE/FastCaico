@@ -21,7 +21,7 @@ class BaseViewController: UIViewController {
     private func loadNavigationItem() {
         self.title = "Launch Box"
         
-        let image = UIImage(named: "car")
+        let image = UIImage(named: "car")?.scaleTo(CGSize(width: 40, height: 40))
         let rightBarButtonItem = UIBarButtonItem(image: image!, style: .plain, target: self, action: #selector(loadShoppingCart))
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
         self.navigationItem.setHidesBackButton(true, animated: false)

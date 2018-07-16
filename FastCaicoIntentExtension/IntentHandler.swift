@@ -7,16 +7,10 @@
 //
 
 import Intents
+import os.log
 
 class IntentHandler: INExtension {
     override func handler(for intent: INIntent) -> Any {
         return self
-    }
-}
-
-extension IntentHandler: OrderFoodIntentHandling {
-    func handle(intent: OrderFoodIntent, completion: @escaping (OrderFoodIntentResponse) -> Void) {
-        let response = OrderFoodIntentResponse(code: .success, userActivity: nil)
-        completion(response)
     }
 }

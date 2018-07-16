@@ -64,6 +64,28 @@
 		DA7E6B4020F8D59A002BD535 /* OrderFoodIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B3F20F8D59A002BD535 /* OrderFoodIntentHandler.swift */; };
 		DA7E6B4220F8D755002BD535 /* SelectGarnishesIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B4120F8D755002BD535 /* SelectGarnishesIntentHandler.swift */; };
 		DA80F67620F8F45700B636C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE5420EE8FE8005CC2A0 /* Assets.xcassets */; };
+		DABA994A20FBFC6A001BBA09 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA994920FBFC6A001BBA09 /* UIImageExtension.swift */; };
+		DABA994B20FC07DE001BBA09 /* OrderFoodIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B3F20F8D59A002BD535 /* OrderFoodIntentHandler.swift */; };
+		DABA994C20FC07E8001BBA09 /* MainDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7C20EE98B1005CC2A0 /* MainDish.swift */; };
+		DABA994D20FC07EA001BBA09 /* Garnish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7E20EE98BC005CC2A0 /* Garnish.swift */; };
+		DABA994E20FC07ED001BBA09 /* FoodOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF16C420F522B200FBAAB5 /* FoodOrder.swift */; };
+		DABA994F20FC07EF001BBA09 /* FoodCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD3C520F6449D00FE241B /* FoodCart.swift */; };
+		DABA995020FC080D001BBA09 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD3CA20F6BC5E00FE241B /* NotificationHandler.swift */; };
+		DABA995120FC0817001BBA09 /* ActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE8520F3EF38005CC2A0 /* ActiveRecord.swift */; };
+		DABA995220FC0820001BBA09 /* MainDish.json in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE8220F3EE16005CC2A0 /* MainDish.json */; };
+		DABA995320FC0820001BBA09 /* Garnish.json in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE8120F3EE16005CC2A0 /* Garnish.json */; };
+		DABA995520FC0BA4001BBA09 /* MainDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7C20EE98B1005CC2A0 /* MainDish.swift */; };
+		DABA995620FC0BA4001BBA09 /* Garnish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE7E20EE98BC005CC2A0 /* Garnish.swift */; };
+		DABA995720FC0BA4001BBA09 /* FoodOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF16C420F522B200FBAAB5 /* FoodOrder.swift */; };
+		DABA995820FC0BA4001BBA09 /* FoodCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD3C520F6449D00FE241B /* FoodCart.swift */; };
+		DABA995A20FC0BB4001BBA09 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AD3CA20F6BC5E00FE241B /* NotificationHandler.swift */; };
+		DABA995B20FC0BB4001BBA09 /* MainDish.json in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE8220F3EE16005CC2A0 /* MainDish.json */; };
+		DABA995C20FC0BB4001BBA09 /* Garnish.json in Resources */ = {isa = PBXBuildFile; fileRef = DA78DE8120F3EE16005CC2A0 /* Garnish.json */; };
+		DABA995D20FC0BB4001BBA09 /* ActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78DE8520F3EF38005CC2A0 /* ActiveRecord.swift */; };
+		DABA995F20FC0C14001BBA09 /* IntentsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B3820F794F9002BD535 /* IntentsManager.swift */; };
+		DABA996020FC0C14001BBA09 /* IntentsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B3820F794F9002BD535 /* IntentsManager.swift */; };
+		DABA996120FC0C7A001BBA09 /* OrderFoodIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E6B3F20F8D59A002BD535 /* OrderFoodIntentHandler.swift */; };
+		DABA996320FC1998001BBA09 /* VoiceShortcutsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA996220FC1998001BBA09 /* VoiceShortcutsDataManager.swift */; };
 		DAD07DAA20F534AC001C1ACF /* Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD07DA920F534AC001C1ACF /* Inspectables.swift */; };
 		DAE751423FCBEA8177A114A9 /* Pods_FastCaicoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D395298B28A6E93A128E9817 /* Pods_FastCaicoTests.framework */; };
 		DAFF16B520F4E99D00FBAAB5 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF16B320F4E99D00FBAAB5 /* OrderConfirmationViewController.swift */; };
@@ -182,6 +204,8 @@
 		DA7E6B3820F794F9002BD535 /* IntentsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentsManager.swift; sourceTree = "<group>"; };
 		DA7E6B3F20F8D59A002BD535 /* OrderFoodIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFoodIntentHandler.swift; sourceTree = "<group>"; };
 		DA7E6B4120F8D755002BD535 /* SelectGarnishesIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGarnishesIntentHandler.swift; sourceTree = "<group>"; };
+		DABA994920FBFC6A001BBA09 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		DABA996220FC1998001BBA09 /* VoiceShortcutsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceShortcutsDataManager.swift; sourceTree = "<group>"; };
 		DAD07DA920F534AC001C1ACF /* Inspectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inspectables.swift; sourceTree = "<group>"; };
 		DAFF16B320F4E99D00FBAAB5 /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 		DAFF16BD20F4ED7500FBAAB5 /* Inspectables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspectables.swift; sourceTree = "<group>"; };
@@ -273,6 +297,7 @@
 				537333AA20F4EB0E002B9F0F /* UITableViewCellExtension.swift */,
 				537333AC20F4EB60002B9F0F /* UITableViewExtension.swift */,
 				DA7AD3C720F69CED00FE241B /* UINavigationControllerExtension.swift */,
+				DABA994920FBFC6A001BBA09 /* UIImageExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -504,6 +529,7 @@
 				DA7E6B3820F794F9002BD535 /* IntentsManager.swift */,
 				DA7E6B3F20F8D59A002BD535 /* OrderFoodIntentHandler.swift */,
 				DA7E6B4120F8D755002BD535 /* SelectGarnishesIntentHandler.swift */,
+				DABA996220FC1998001BBA09 /* VoiceShortcutsDataManager.swift */,
 			);
 			path = Intents;
 			sourceTree = "<group>";
@@ -723,6 +749,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABA995320FC0820001BBA09 /* Garnish.json in Resources */,
+				DABA995220FC0820001BBA09 /* MainDish.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,8 +758,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABA995C20FC0BB4001BBA09 /* Garnish.json in Resources */,
 				DA80F67620F8F45700B636C9 /* Assets.xcassets in Resources */,
 				DA7E6B2020F790B0002BD535 /* MainInterface.storyboard in Resources */,
+				DABA995B20FC0BB4001BBA09 /* MainDish.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -833,9 +863,11 @@
 				539FB73820F54C6800A76CF8 /* OrderSummaryView.swift in Sources */,
 				531BD68620F6778F00A9A6C8 /* GarnishesHeaderView.swift in Sources */,
 				537333AD20F4EB60002B9F0F /* UITableViewExtension.swift in Sources */,
+				DABA996320FC1998001BBA09 /* VoiceShortcutsDataManager.swift in Sources */,
 				537333B720F4FC5E002B9F0F /* GarnishTableViewCell.swift in Sources */,
 				DA7AD3C020F6394A00FE241B /* FoodCartTableViewCell.swift in Sources */,
 				53B5361F20F3E1E00073AAD0 /* MeatTableViewCell.swift in Sources */,
+				DABA994A20FBFC6A001BBA09 /* UIImageExtension.swift in Sources */,
 				DA7AD3C820F69CED00FE241B /* UINavigationControllerExtension.swift in Sources */,
 				DA7AD3C620F6449D00FE241B /* FoodCart.swift in Sources */,
 				DA78DE7F20EE98BC005CC2A0 /* Garnish.swift in Sources */,
@@ -873,9 +905,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABA994D20FC07EA001BBA09 /* Garnish.swift in Sources */,
+				DABA995020FC080D001BBA09 /* NotificationHandler.swift in Sources */,
+				DABA995F20FC0C14001BBA09 /* IntentsManager.swift in Sources */,
 				DA7E6B3320F790CC002BD535 /* IntentViewController.swift in Sources */,
 				DA7E6B3C20F7AAB3002BD535 /* FastCaicoIntents.intentdefinition in Sources */,
+				DABA995120FC0817001BBA09 /* ActiveRecord.swift in Sources */,
+				DABA994F20FC07EF001BBA09 /* FoodCart.swift in Sources */,
 				DA7E6B1220F790B0002BD535 /* IntentHandler.swift in Sources */,
+				DABA994C20FC07E8001BBA09 /* MainDish.swift in Sources */,
+				DABA994B20FC07DE001BBA09 /* OrderFoodIntentHandler.swift in Sources */,
+				DABA994E20FC07ED001BBA09 /* FoodOrder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,7 +924,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA7E6B3120F790BC002BD535 /* IntentHandler.swift in Sources */,
+				DABA996120FC0C7A001BBA09 /* OrderFoodIntentHandler.swift in Sources */,
+				DABA995A20FC0BB4001BBA09 /* NotificationHandler.swift in Sources */,
+				DABA996020FC0C14001BBA09 /* IntentsManager.swift in Sources */,
+				DABA995620FC0BA4001BBA09 /* Garnish.swift in Sources */,
+				DABA995720FC0BA4001BBA09 /* FoodOrder.swift in Sources */,
+				DABA995D20FC0BB4001BBA09 /* ActiveRecord.swift in Sources */,
 				DA7E6B3D20F7AAB4002BD535 /* FastCaicoIntents.intentdefinition in Sources */,
+				DABA995520FC0BA4001BBA09 /* MainDish.swift in Sources */,
+				DABA995820FC0BA4001BBA09 /* FoodCart.swift in Sources */,
 				DA7E6B1D20F790B0002BD535 /* IntentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
