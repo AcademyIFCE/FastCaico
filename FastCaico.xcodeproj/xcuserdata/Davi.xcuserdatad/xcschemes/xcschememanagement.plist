@@ -7,12 +7,16 @@
 		<key>FastCaico.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>5</integer>
 		</dict>
 		<key>FastCaicoIntentExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+=======
+			<integer>0</integer>
+>>>>>>> 0403f8aa385e8227556b0f6fc4973f621be67272
 		</dict>
 		<key>FastCaicoIntentExtensionUI.xcscheme</key>
 		<dict>
